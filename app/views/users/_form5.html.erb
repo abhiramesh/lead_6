@@ -1,9 +1,16 @@
 <%= form_for @user, :method => :put, :html => {:id => "form5"} do |f| %>
 	<div class="row">
 		<div class="more-offer"> Who should we send this to?</div>
+		<div class="span2">
+			<%= f.label :phone %>
+			<%= f.text_field :phone, placeholder: "Phone", :style => "width:90px;" %>
+		<div class="message" id="phone_error"></div>
+		</div>
+		<div class="span2">
 			<%= f.label :name %>
-			<%= f.text_field :name, placeholder: "Name", :style => "width:120px;" %>
+			<%= f.text_field :name, placeholder: "Name", :style => "width:90px;" %>
 			<div class="message" id="name_error"></div>
+		</div>
 	</div>
 	<%= f.submit 'Request eBook', :class => 'submit', :id => 'submit5', :style => 'left: 120px;top: 10px;' %>
 	<div class="back-link" id="back-link-4">Back</div>
@@ -19,10 +26,23 @@
 			$('#name_error').empty();
 		}
 	});
+	$('input#user_phone').blur(function(event){
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+			event.preventDefault();
+			$('#phone_error').empty().append("Please enter your phone number");
+		}
+		if ($('input#user_phone').val().replace(/\D+/g,'').length == 10) {
+			$('#phone_error').empty();
+		}
+	});
 	$('#submit5').click(function(event){
 		if ($('input#user_name').val().length < 1) {
 			event.preventDefault();
 			$('#name_error').empty().append("Please enter your name");
+		}
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+			event.preventDefault();
+			$('#phone_error').empty().append("Please enter your phone number");
 		}
 	});
 	$('#back-link-4').click(function(){
