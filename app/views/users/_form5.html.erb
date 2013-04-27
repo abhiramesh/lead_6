@@ -1,0 +1,32 @@
+<%= form_for @user, :method => :put, :html => {:id => "form5"} do |f| %>
+	<div class="row">
+		<div class="more-offer"> Who should we send this to?</div>
+			<%= f.label :name %>
+			<%= f.text_field :name, placeholder: "Name", :style => "width:120px;" %>
+			<div class="message" id="name_error"></div>
+	</div>
+	<%= f.submit 'Request eBook', :class => 'submit', :id => 'submit5', :style => 'left: 120px;top: 10px;' %>
+	<div class="back-link" id="back-link-4">Back</div>
+<% end %>
+
+<script type="text/javascript">
+	$('input#user_name').blur(function(event){
+		if ($('input#user_name').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please enter your name");
+		}
+		if ($('input#user_name').val().length > 0) {
+			$('#name_error').empty();
+		}
+	});
+	$('#submit5').click(function(event){
+		if ($('input#user_name').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please enter your name");
+		}
+	});
+	$('#back-link-4').click(function(){
+		$('#form5').hide();
+		$('#form4').show().insertAfter('div.progress');
+	});
+</script>

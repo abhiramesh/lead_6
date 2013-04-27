@@ -1,0 +1,13 @@
+<%= form_for @user, remote: true, :method => :put, :html => {:id => "form2"} do |f| %>
+	<%= f.label :mortgage_balance, 'Your mortgage balance is:' %>
+	<%= f.select :mortgage_balance, mortgage_balance_options, {:include_blank => 'Select from'}, :onchange => ("$('#form2').submit()") %>
+	<div id="newsubmit2"></div>
+	<div class="back-link" id="back-link-1" style="padding-top:30px;">Back</div>
+<% end %>
+<script type="text/javascript">
+	$('#back-link-1').click(function(){
+		$('#form2').hide();
+		$('#form1').show().insertAfter('div.progress');
+		$('#newsubmit1').empty().append($('<input class="submit" id="submit6" name="commit" type="submit" value="Next">'));
+	});
+</script>

@@ -1,0 +1,54 @@
+<%= form_for @user, remote: true, :method => :put, :html => {:id => "form4"} do |f| %>
+<div class="more-offer"> Where should we send your quote? </div>
+<div class="row">
+	<div class="span2">
+		<%= f.label :email %>
+		<%= f.text_field :email, placeholder: "Email", :style => "width:90px;" %>
+		<div class="message" id="email_error"></div>
+	</div>
+	<div class="span2">
+		<%= f.label :phone %>
+		<%= f.text_field :phone, placeholder: "Phone", :style => "width:90px;" %>
+		<div class="message" id="phone_error"></div>
+	</div>
+</div>
+	<%= f.submit 'Claim your Free eBook', :class => 'submit', :id => "submit4", :style => "font-size: 16px;margin-left: -87px;" %>
+	<div class="back-link" id="back-link-3">Back</div>
+<% end %>
+
+<script type="text/javascript">
+	$('input#user_email').blur(function(event){
+		var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+		if (!email_format.test($('input#user_email').val())) {
+			event.preventDefault();
+			$('#email_error').empty().append("Please enter a valid email");
+		}
+		if (email_format.test($('input#user_email').val())) {
+			$('#email_error').empty();
+		}
+	});
+	$('input#user_phone').blur(function(event){
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+			event.preventDefault();
+			$('#phone_error').empty().append("Please enter your phone number");
+		}
+		if ($('input#user_phone').val().replace(/\D+/g,'').length == 10) {
+			$('#phone_error').empty();
+		}
+	});
+	$('#submit4').click(function(event){
+		var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+		if (!email_format.test($('input#user_email').val())) {
+			event.preventDefault();
+			$('#email_error').empty().append("Please enter a valid email");
+		}
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+			event.preventDefault();
+			$('#phone_error').empty().append("Please enter your phone number");
+		}
+	});
+	$('#back-link-3').click(function(){
+		$('#form4').hide();
+		$('#form3').show().insertAfter('div.progress');
+	});
+</script>

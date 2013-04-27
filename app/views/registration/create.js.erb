@@ -1,0 +1,4 @@
+$('#form1').hide();
+$('#form2').show().insertAfter('div.progress');
+$('#form2').attr('action','/users/' + '<%=current_user.id%>');
+$('.bar').attr('style', 'width:60%;');

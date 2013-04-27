@@ -1,0 +1,26 @@
+<div class="container">
+<h1>Leads</h1>
+
+<table>
+  <tr>
+    <th>Zipcode</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Home Value</th>
+    <th>Mortgage Balance</th>
+    <th>Time Created</th>
+  </tr>
+<% @users.each do |user| %>
+  <tr>
+    <td><%=user.zipcode%></td>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.phone %></td>
+    <td><%= user.home_value %></td>
+    <td><%= user.mortgage_balance %></td>
+    <td><%= user.created_at %></td>
+  </tr>
+<% end %>
+</table>
+</div>

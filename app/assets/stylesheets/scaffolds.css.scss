@@ -1,0 +1,213 @@
+@import 'bootstrap';
+
+.bgimg{
+  background-image: url('bgimg.png');
+  background-size: contain;
+  margin-top: -10px;
+  height: 550px;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  width: 500px;
+  float: left;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.catch-phrase{
+  padding-left: 40px;
+  margin-top: 75px;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Arial';
+  text-align: left;
+}
+
+.formimg{
+  background-image: url("form.png");
+  height: 210px;
+  width: 400px;
+  text-align: left;
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+  margin-left: -400px;
+  margin-top: 20px;
+  padding-top: 80px;
+  padding-left: 70px;
+  overflow: hidden;
+}
+
+.form-heading{
+  color: white;
+  position: relative;
+  top: -55px;
+  left: 0px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.progress{
+  margin-left: 160px;
+  margin-top: -30px;
+  width: 135px;
+  height: 15px;
+}
+
+.submit{
+  border: solid;
+  background: orange;
+  padding: 10px 30px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  border-color: #777;
+  border-width: 1px;
+  box-shadow: 2px 2px 3px #777;
+  position: relative;
+  left: 165px;
+}
+
+.submit:hover{
+  color: black;
+  box-shadow: 3px 3px 4px #313131;
+}
+
+#form2{
+  display: none;
+}
+#form3{
+  display: none;
+}
+#form4{
+  display: none;
+}
+#form5{
+  display: none;
+}
+
+.more-offer{
+  text-decoration: underline;
+  padding-bottom: 5px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  color: black;
+}
+
+.thanks-phrase{
+  margin-top: 200px;
+  font-size: 35px;
+  line-height: 35px;
+  background: #eee;
+  opacity: 0.9;
+  width: 90%;
+  padding: 15px;
+}
+
+.logos{
+  width: 80%;
+  padding-top: 10px;
+  margin-top: 100px;
+  opacity: 0.7;
+}
+
+body {
+  background-color: #F8F8F8;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+input[type="text"]{
+  height:30px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+form{
+  padding-bottom: 100px;
+}
+
+.message{
+  color: red;
+  margin-top: -5px;
+  padding-bottom: 5px;
+}
+
+.back-link{
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -20px;
+}
+
+.back-link:hover{
+  color: #093E67;
+}

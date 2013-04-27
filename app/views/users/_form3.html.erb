@@ -1,0 +1,32 @@
+<%= form_for @user, remote: true, :method => :put, :html => {:id => "form3"} do |f| %>
+	<%= f.label :zipcode %>
+	<%= f.text_field :zipcode, placeholder: "Zipcode", :style => "width:120px;" %>
+	<div class="message" id="zip_error"></div>
+	<%= f.submit 'Calculate Quote', :class => 'submit', :id => "submit3", :style => "left: 100px" %>
+	<div class="back-link" id="back-link-2">Back</div>
+<% end %>
+
+<script type="text/javascript">
+	$('input#user_zipcode').blur(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
+		if (zipRegex.test($('input#user_zipcode').val())) {
+			$('#zip_error').empty();
+		}
+	});
+	$('#submit3').click(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
+	});
+	$('#back-link-2').click(function(){
+		$('#form3').hide();
+		$('#form2').show().insertAfter('div.progress');
+		$('#newsubmit2').empty().append($('<input class="submit" id="submit7" name="commit" type="submit" value="Next">'));
+	});
+</script>
