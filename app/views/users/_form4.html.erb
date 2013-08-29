@@ -1,31 +1,29 @@
-<%= form_for @user, remote: true, :method => :put, :html => {:id => "form4"} do |f| %>
-<div class="more-offer"> Where should we send your quote? </div>
-<div class="row">
-		<%= f.label :email %>
-		<%= f.text_field :email, placeholder: "Email", :style => "width:120px;" %>
-		<div class="message" id="email_error"></div>
-</div>
-	<%= f.submit 'Next', :class => 'submit', :id => "submit4" %>
+<div id="form4">
+	<%= label_tag :medical, 'Have you seen a doctor in the last 6 months?' %>
+	<%= select_tag :medical, options_for_select(medical_options) %>
+	<div class="desc">
+		You need to have a medical record within the past 6 months to qualify.
+	</div>
+	<div class="message" id="medical_error"></div>
+	<div class='submit', id="submit4">
+		Next
+	</div>
 	<div class="back-link" id="back-link-3">Back</div>
-<% end %>
+</div>
 
 <script type="text/javascript">
-	$('input#user_email').blur(function(event){
-		var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-		if (!email_format.test($('input#user_email').val())) {
-			event.preventDefault();
-			$('#email_error').empty().append("Please enter a valid email");
-		}
-		if (email_format.test($('input#user_email').val())) {
-			$('#email_error').empty();
-		}
-	});
-	$('#submit4').click(function(event){
-		var email_format = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
-		if (!email_format.test($('input#user_email').val())) {
-			event.preventDefault();
-			$('#email_error').empty().append("Please enter a valid email");
-		}
+	$('#submit4').click(function(event) {
+  		event.preventDefault();
+		$.ajax({
+		  type: "POST",
+		  url: $('#form4').attr('action'),
+		  data: { medical: $("#medical").val() },
+		  dataType: "script",
+		  async: false
+		});
+		$('#form4').hide();
+		$('#form5').show().insertAfter('div.progress');
+		$('.bar').attr('style', 'width:80%;');
 	});
 	$('#back-link-3').click(function(){
 		$('#form4').hide();

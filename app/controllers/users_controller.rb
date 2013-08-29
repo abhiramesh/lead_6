@@ -58,12 +58,43 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
-
+    if params["zipcode"]
+      @user.zipcode = params["zipcode"]
+      @user.save!
+    end
+    if params["age"]
+      @user.age = params["age"]
+      @user.save!
+    end
+    if params["employment"]
+      @user.employment = params["employment"]
+      @user.save!
+    end
+    if params["medical"]
+      @user.medical = params["medical"]
+      @user.save!
+    end
+    if params["attorney"]
+      @user.attorney = params["attorney"]
+      @user.save!
+    end
+    if params["name"]
+      @user.name = params["name"]
+      @user.save!
+    end
+    if params["phone"]
+      @user.phone = params["phone"]
+      @user.save!
+    end
+    if params["email"]
+      @user.email = params["email"]
+      @user.save!
+    end
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to '/logout', notice: 'User was successfully updated.' }
         format.json { head :no_content }
-        format.js
+        format.js {}
       else
         format.html { render action: "edit" }
         format.json { render json: @user.errors, status: :unprocessable_entity }

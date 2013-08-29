@@ -19,6 +19,27 @@ module ApplicationHelper
 		]
 	end
 
+	def employment_options
+		[
+			["Making less than $1500 per month", "Making less than $1500 per month"],
+			["Making more than $1500 per month", "Making more than $1500 per month"]
+		]
+	end
+
+	def medical_options
+		[
+			["Yes", "Yes"],
+			["No", "No"]
+		]
+	end
+
+	def attorney_options
+		[
+			["Yes", "Yes"],
+			["No", "No"]
+		]
+	end
+
 
 	def home_value_options
 		[

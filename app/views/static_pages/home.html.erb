@@ -6,7 +6,7 @@
 			Do You Qualify for Benefits?
 		</div>
 		<div class="progress">
-			<div class="bar" style="width:30%;"></div>
+			<div class="bar" style="width:10%;"></div>
 		</div>
 		<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
 			<%= f.label :age, 'How old are you?' %>
@@ -24,3 +24,8 @@
 	</div>
 </div>
 <%= render '/users/form2' %>
+<%= render '/users/form3' %>
+<%= render '/users/form4' %>
+<%= render '/users/form5' %>
+<%= render '/users/form6' %>
+<%= render '/users/form7' %>

@@ -10,6 +10,8 @@ Mortgage3::Application.routes.draw do
 
   get '/thanks', to: 'static_pages#thanks'
 
+  post '/users/:id', to: 'users#update'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

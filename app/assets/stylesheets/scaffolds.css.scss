@@ -70,10 +70,16 @@ img.info-box{
   height: 15px;
 }
 
+.desc{
+  width: 295px;
+  font-style: italic;
+  font-size: 12px;
+}
+
 .submit{
   border: solid;
   background: orange;
-  padding: 10px 30px;
+  padding: 10px 5px;
   width: 100px;
   color: white;
   font-weight: bold;
@@ -84,12 +90,16 @@ img.info-box{
   border-width: 1px;
   box-shadow: 2px 2px 3px #777;
   position: relative;
-  left: 165px;
+  left: 175px;
 }
 
 .submit:hover{
   color: black;
   box-shadow: 3px 3px 4px #313131;
+}
+
+label{
+  max-width: 300px !important;
 }
 
 #form2{
@@ -103,6 +113,28 @@ img.info-box{
 }
 #form5{
   display: none;
+}
+#form6{
+  display: none;
+}
+#form7{
+  display: none;
+}
+
+#first_name{
+  width: 100px;
+}
+
+#last_name{
+  width: 100px;
+}
+
+input#user_email{
+  width: 100px;
+}
+
+input#user_phone{
+  width: 100px;
 }
 
 .more-offer{
