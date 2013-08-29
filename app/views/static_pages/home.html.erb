@@ -1,33 +1,26 @@
 <div class="container bgimg" align="center">
-	<div>
-		<img src="/assets/logo.png" class="logo">
-	</div>
-	<div class="catch-phrase">
-		Get a Free Reverse Mortgage Guide
-	</div>
+	<img src="/assets/logo.png" class="logo">
+	<img src="/assets/header.png" class="header-phone">
 	<div class="formimg">
 		<div class="form-heading">
-			How Much Do You Qualify For?
+			Do You Qualify for Benefits?
 		</div>
 		<div class="progress">
 			<div class="bar" style="width:30%;"></div>
 		</div>
 		<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
-			<%= f.label :home_value, 'The value of your home is:' %>
-			<%= f.select :home_value, home_value_options, {:include_blank => 'Select from'}, :onchange => ("$('#form1').submit()") %>
+			<%= f.label :age, 'How old are you?' %>
+			<%= f.select :age, options_for_select(("18".."62")), {:include_blank => 'Select from'}, :onchange => ("$('#form1').submit()") %>
 			<div id="newsubmit1"/>
 		<% end %>
 	</div>
 </div>
 <div>
-	<img src="/assets/box.png" style="margin-top: -300px;width: 350px;margin-left: 400px;">
+	<img src="/assets/box.png" class="info-box">
 </div>
 <div class="container">
-	<img src="/assets/logos.png" class="logos">
+	<div class="logos-box">
+		<img src="/assets/logos.png" class="logos">
+	</div>
 </div>
-
-<%= render partial: 'users/form2' %>
-<%= render partial: 'users/form3' %>
-<%= render partial: 'users/form4' %>
-<%= render partial: 'users/form5' %>
-
+<%= render '/users/form2' %>

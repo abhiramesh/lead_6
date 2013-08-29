@@ -1,7 +1,8 @@
 <%= form_for @user, remote: true, :method => :put, :html => {:id => "form2"} do |f| %>
-	<%= f.label :mortgage_balance, 'Your mortgage balance is:' %>
-	<%= f.select :mortgage_balance, mortgage_balance_options, {:include_blank => 'Select from'}, :onchange => ("$('#form2').submit()") %>
-	<div id="newsubmit2"></div>
+	<%= f.label :zipcode, 'Your zipcode is:' %>
+	<%= f.text_field :zipcode, placeholder: "Zipcode", :style => "width:120px;" %>
+	<div class="message" id="zip_error"></div>
+	<%= f.submit 'Next', :class => 'submit', :id => "submit2" %>
 	<div class="back-link" id="back-link-1" style="padding-top:30px;">Back</div>
 <% end %>
 <script type="text/javascript">
@@ -9,5 +10,22 @@
 		$('#form2').hide();
 		$('#form1').show().insertAfter('div.progress');
 		$('#newsubmit1').empty().append($('<input class="submit" id="submit6" name="commit" type="submit" value="Next">'));
+	});
+	$('input#user_zipcode').blur(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
+		if (zipRegex.test($('input#user_zipcode').val())) {
+			$('#zip_error').empty();
+		}
+	});
+	$('#submit2').click(function(event){
+		var zipRegex = /^\d{5}$/;
+		if (!zipRegex.test($('input#user_zipcode').val())) {
+			event.preventDefault();
+			$('#zip_error').empty().append("Please enter a valid zipcode");
+		}
 	});
 </script>

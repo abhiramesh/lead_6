@@ -2,17 +2,17 @@
 
 .bgimg{
   background-image: url('bgimg.png');
-  background-size: contain;
+  background-size: cover;
   margin-top: -10px;
   height: 550px;
   background-repeat: no-repeat;
 }
 
-.logo{
-  width: 500px;
-  float: left;
-  padding-left: 30px;
-  padding-top: 10px;
+.header-phone{
+  width: 400px;
+  position: relative;
+  top: 10px;
+  left: 80px
 }
 
 .catch-phrase{
@@ -32,11 +32,26 @@
   text-align: left;
   background-size: 400px 300px;
   background-repeat: no-repeat;
-  margin-left: -400px;
-  margin-top: 20px;
+  position: relative;
+  top: 35px;
+  left: 265px;
   padding-top: 80px;
   padding-left: 70px;
   overflow: hidden;
+}
+
+.logo{
+  width: 350px;
+  position: relative;
+  top: 15px;
+  left: -80px;
+}
+
+img.info-box{
+  position: relative;
+  width: 350px;
+  top: -185px;
+  left: -200px;
 }
 
 .form-heading{
@@ -101,19 +116,27 @@
 
 .thanks-phrase{
   margin-top: 200px;
-  font-size: 35px;
+  font-size: 28px;
   line-height: 35px;
   background: #eee;
-  opacity: 0.9;
+  opacity: 0.75;
   width: 90%;
   padding: 15px;
 }
 
 .logos{
-  width: 80%;
+  width: 450px;
   padding-top: 10px;
-  margin-top: 100px;
   opacity: 0.7;
+  margin-top: 0px;
+}
+
+.logos-box{
+  background: white;
+  position: relative;
+  top: -65px;
+  height: 100px;
+  border-top: solid 3px #313131;
 }
 
 body {

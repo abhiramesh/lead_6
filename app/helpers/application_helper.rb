@@ -13,6 +13,13 @@ module ApplicationHelper
 	end
 
 
+	def age_options
+		[
+			["Under 18", "Under 18"],
+		]
+	end
+
+
 	def home_value_options
 		[
 			["0-$150,000", "0-$150,000"],
