@@ -19282,3 +19282,1152 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-29 19:06:36 -0400
 Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.9ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.2ms)
+  Rendered users/_form5.html.erb (0.3ms)
+  Rendered users/_form6.html.erb (0.5ms)
+  Rendered users/_form7.html.erb (3.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 149ms (Views: 147.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /registration.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-29 22:52:09 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.2ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.2ms)
+  Rendered users/_form5.html.erb (0.3ms)
+  Rendered users/_form6.html.erb (0.4ms)
+  Rendered users/_form7.html.erb (1.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 107ms (Views: 106.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /registration.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /registration.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:03:41 -0400
+Served asset /users.js - 200 OK (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-30 01:03:43 -0400
+Processing by RegistrationController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g32YpNMj4/ylMAL5sQ92amIolmKQRCbokpHxlKxOftU=", "user"=>{"age"=>"23"}}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("age", "attorney", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "employment", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "medical", "name", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) RETURNING "id"[0m  [["age", nil], ["attorney", nil], ["created_at", Fri, 30 Aug 2013 05:03:43 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", nil], ["employment", nil], ["encrypted_password", ""], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["medical", nil], ["name", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 30 Aug 2013 05:03:43 UTC +00:00], ["zipcode", nil]]
+  [1m[35m (59.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "age" = '23', "updated_at" = '2013-08-30 05:03:43.300121' WHERE "users"."id" = 85
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-08-30 05:03:43.304091', "current_sign_in_at" = '2013-08-30 05:03:43.304091', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-08-30 05:03:43.304879' WHERE "users"."id" = 85[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  Rendered registration/create.js.erb (0.1ms)
+Completed 200 OK in 94ms (Views: 22.8ms | ActiveRecord: 64.9ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:03:46 -0400
+Processing by UsersController#update as JS
+  Parameters: {"zipcode"=>"30004", "id"=>"85"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "zipcode" = '30004', "updated_at" = '2013-08-30 05:03:46.648274' WHERE "users"."id" = 85[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.1ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:03:47 -0400
+Processing by UsersController#update as JS
+  Parameters: {"employment"=>"Making less than $1500 per month", "id"=>"85"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "employment" = 'Making less than $1500 per month', "updated_at" = '2013-08-30 05:03:47.556258' WHERE "users"."id" = 85[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:03:48 -0400
+Processing by UsersController#update as JS
+  Parameters: {"medical"=>"Yes", "id"=>"85"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "medical" = 'Yes', "updated_at" = '2013-08-30 05:03:48.383303' WHERE "users"."id" = 85[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:03:49 -0400
+Processing by UsersController#update as JS
+  Parameters: {"attorney"=>"Yes", "id"=>"85"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "attorney" = 'Yes', "updated_at" = '2013-08-30 05:03:49.093842' WHERE "users"."id" = 85[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:03:56 -0400
+Processing by UsersController#update as JS
+  Parameters: {"name"=>"sdfsdf sdfsdf", "id"=>"85"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "name" = 'sdfsdf sdfsdf', "updated_at" = '2013-08-30 05:03:56.871061' WHERE "users"."id" = 85[0m
+  [1m[35m (144.8ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 152ms (Views: 2.2ms | ActiveRecord: 146.7ms)
+
+
+Started POST "/users/85" for 127.0.0.1 at 2013-08-30 01:04:04 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g32YpNMj4/ylMAL5sQ92amIolmKQRCbokpHxlKxOftU=", "user"=>{"phone"=>"2233334444sd", "email"=>"f@23e.com"}, "commit"=>"Get Guide!", "id"=>"85"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "85"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "phone" = '2233334444sd', "email" = 'f@23e.com', "updated_at" = '2013-08-30 05:04:04.333072' WHERE "users"."id" = 85[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/logout
+Completed 302 Found in 5ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:04:04 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 85 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/thanks
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/thanks" for 127.0.0.1 at 2013-08-30 01:04:04 -0400
+Processing by StaticPagesController#thanks as HTML
+  Rendered static_pages/thanks.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:04:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:24:26 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.1ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.2ms)
+  Rendered users/_form5.html.erb (0.3ms)
+  Rendered users/_form6.html.erb (0.3ms)
+  Rendered users/_form7.html.erb (2.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 380ms (Views: 327.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:24:27 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.1ms)
+  Rendered users/_form3.html.erb (0.1ms)
+  Rendered users/_form4.html.erb (0.1ms)
+  Rendered users/_form5.html.erb (0.1ms)
+  Rendered users/_form6.html.erb (0.3ms)
+  Rendered users/_form7.html.erb (1.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /registration.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /registration.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:24:28 -0400
+Served asset /users.js - 200 OK (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-30 01:24:31 -0400
+Processing by RegistrationController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdb3RVzVfpbIGnZEEhElVYE1/yL62Wde6UFi5flNVkU=", "user"=>{"age"=>"23"}}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "users" ("age", "attorney", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "employment", "encrypted_password", "last_sign_in_at", "last_sign_in_ip", "medical", "name", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) RETURNING "id"[0m  [["age", nil], ["attorney", nil], ["created_at", Fri, 30 Aug 2013 05:24:31 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", nil], ["employment", nil], ["encrypted_password", ""], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["medical", nil], ["name", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 30 Aug 2013 05:24:31 UTC +00:00], ["zipcode", nil]]
+  [1m[35m (1.7ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  UPDATE "users" SET "age" = '23', "updated_at" = '2013-08-30 05:24:31.219604' WHERE "users"."id" = 86
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2013-08-30 05:24:31.222863', "current_sign_in_at" = '2013-08-30 05:24:31.222863', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-08-30 05:24:31.223627' WHERE "users"."id" = 86[0m
+  [1m[35m (0.9ms)[0m  COMMIT
+  Rendered registration/create.js.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 21.9ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:24:36 -0400
+
+LoadError (cannot load such file -- mechanize):
+  app/controllers/users_controller.rb:4:in `<class:UsersController>'
+  app/controllers/users_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:24:38 -0400
+Processing by UsersController#update as JS
+  Parameters: {"employment"=>"Making less than $1500 per month", "id"=>"86"}
+  Rendered users/update.js.erb (0.5ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:24:38 -0400
+Processing by UsersController#update as JS
+  Parameters: {"medical"=>"Yes", "id"=>"86"}
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:24:39 -0400
+Processing by UsersController#update as JS
+  Parameters: {"attorney"=>"Yes", "id"=>"86"}
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:24:42 -0400
+Processing by UsersController#update as JS
+  Parameters: {"name"=>"sdf sdf", "id"=>"86"}
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/86" for 127.0.0.1 at 2013-08-30 01:25:01 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdb3RVzVfpbIGnZEEhElVYE1/yL62Wde6UFi5flNVkU=", "user"=>{"phone"=>"3334445544", "email"=>"sdf@sdf.com"}, "commit"=>"Get Guide!", "id"=>"86"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template users/update, application/update with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/abhiramesh/rails_projects/lead_1_amp/app/views"
+  * "/Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/devise-3.0.3/app/views"
+):
+  actionpack (3.2.11) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.11) lib/action_view/lookup_context.rb:109:in `find'
+  actionpack (3.2.11) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.11) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.11) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.11) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.11) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.11) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.11) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.11) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.11) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.11) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/abhiramesh/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.11) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.11) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.11) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:414:in `_run__1464236261706369385__process_action__3555856800691499592__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.11) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.11) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.11) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.11) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.11) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.11) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  client_side_validations (3.2.6) lib/client_side_validations/middleware.rb:17:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__3964129892116360187__call__110384348083155717__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/abhiramesh/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/abhiramesh/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/abhiramesh/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.7ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:30:40 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 86 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 500ms (ActiveRecord: 244.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:30:40 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 86 LIMIT 1
+  [1m[36m (1.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:30:40 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.7ms)
+  Rendered users/_form3.html.erb (0.6ms)
+  Rendered users/_form4.html.erb (0.5ms)
+  Rendered users/_form5.html.erb (0.5ms)
+  Rendered users/_form6.html.erb (0.7ms)
+  Rendered users/_form7.html.erb (2.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (42.6ms)
+Compiled registration.css  (7ms)  (pid 26211)
+Compiled scaffolds.css  (2460ms)  (pid 26211)
+Compiled static_pages.css  (274ms)  (pid 26211)
+Compiled users.css  (21ms)  (pid 26211)
+Compiled application.css  (3403ms)  (pid 26211)
+Compiled jquery.js  (3ms)  (pid 26211)
+Compiled jquery_ujs.js  (0ms)  (pid 26211)
+Compiled registration.js  (823ms)  (pid 26211)
+Compiled static_pages.js  (235ms)  (pid 26211)
+Compiled users.js  (95ms)  (pid 26211)
+Compiled application.js  (2370ms)  (pid 26211)
+Completed 200 OK in 6530ms (Views: 6529.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.3ms)
+  Rendered users/_form3.html.erb (0.4ms)
+  Rendered users/_form4.html.erb (0.3ms)
+  Rendered users/_form5.html.erb (0.6ms)
+  Rendered users/_form6.html.erb (0.6ms)
+  Rendered users/_form7.html.erb (9.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /registration.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /static_pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /users.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /registration.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /registration.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /static_pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:30:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (8.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (14.6ms)[0m  [1mALTER TABLE "users" ADD COLUMN "ip" character varying(255)[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD COLUMN "lead" character varying(255)
+  [1m[36m (5.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130830053110')[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.7ms)
+  Rendered users/_form3.html.erb (0.9ms)
+  Rendered users/_form4.html.erb (0.5ms)
+  Rendered users/_form5.html.erb (0.6ms)
+  Rendered users/_form6.html.erb (0.9ms)
+  Rendered users/_form7.html.erb (34.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (82.9ms)
+Completed 200 OK in 372ms (Views: 224.4ms | ActiveRecord: 27.9ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /registration.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /scaffolds.css - 200 OK (7ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /static_pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:52:09 -0400
+Served asset /registration.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:52:10 -0400
+Served asset /users.js - 200 OK (2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-30 01:52:11 -0400
+Processing by RegistrationController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGrWCevvIKRRISmkoTUDa2G1gJS/AL/N+srbQc7RQQc=", "user"=>{"age"=>"24"}}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (46.9ms)[0m  INSERT INTO "users" ("age", "attorney", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "employment", "encrypted_password", "ip", "last_sign_in_at", "last_sign_in_ip", "lead", "medical", "name", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["age", nil], ["attorney", nil], ["created_at", Fri, 30 Aug 2013 05:52:11 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", nil], ["employment", nil], ["encrypted_password", ""], ["ip", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lead", nil], ["medical", nil], ["name", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 30 Aug 2013 05:52:11 UTC +00:00], ["zipcode", nil]]
+  [1m[36m (1.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.9ms)[0m  [1mUPDATE "users" SET "age" = '24', "updated_at" = '2013-08-30 05:52:11.811315' WHERE "users"."id" = 87[0m
+  [1m[35m (1.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-08-30 05:52:11.815499', "current_sign_in_at" = '2013-08-30 05:52:11.815499', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-08-30 05:52:11.816219' WHERE "users"."id" = 87
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  Rendered registration/create.js.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 5.7ms | ActiveRecord: 53.8ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:14 -0400
+Processing by UsersController#update as JS
+  Parameters: {"zipcode"=>"53343", "id"=>"87"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "zipcode" = '53343', "updated_at" = '2013-08-30 05:52:14.491686' WHERE "users"."id" = 87
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.7ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:15 -0400
+Processing by UsersController#update as JS
+  Parameters: {"employment"=>"Making less than $1500 per month", "id"=>"87"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "employment" = 'Making less than $1500 per month', "updated_at" = '2013-08-30 05:52:15.442898' WHERE "users"."id" = 87
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:16 -0400
+Processing by UsersController#update as JS
+  Parameters: {"medical"=>"Yes", "id"=>"87"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "medical" = 'Yes', "updated_at" = '2013-08-30 05:52:16.016910' WHERE "users"."id" = 87
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:17 -0400
+Processing by UsersController#update as JS
+  Parameters: {"attorney"=>"No", "id"=>"87"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "attorney" = 'No', "updated_at" = '2013-08-30 05:52:17.812605' WHERE "users"."id" = 87
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:20 -0400
+Processing by UsersController#update as JS
+  Parameters: {"name"=>"test test", "id"=>"87"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "name" = 'test test', "updated_at" = '2013-08-30 05:52:20.454855' WHERE "users"."id" = 87
+  [1m[36m (68.0ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 73ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started POST "/users/87" for 127.0.0.1 at 2013-08-30 01:52:28 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGrWCevvIKRRISmkoTUDa2G1gJS/AL/N+srbQc7RQQc=", "user"=>{"phone"=>"445-333-4433", "email"=>"bob@yahoo.com"}, "commit"=>"Get Guide!", "id"=>"87"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "87"]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/users_controller.rb:123:in `block in update'
+  app/controllers/users_controller.rb:122:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:54:37 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 87 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 87 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.2ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.1ms)
+  Rendered users/_form5.html.erb (0.1ms)
+  Rendered users/_form6.html.erb (0.3ms)
+  Rendered users/_form7.html.erb (2.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.1ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.2ms)
+  Rendered users/_form5.html.erb (0.1ms)
+  Rendered users/_form6.html.erb (0.4ms)
+  Rendered users/_form7.html.erb (2.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /registration.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /registration.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:54:38 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-30 01:54:41 -0400
+Processing by RegistrationController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ohPhG+evYG2lTnsHBKJJkZNVXuGmqmWMZIYtgz+RnX4=", "user"=>{"age"=>"28"}}
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("age", "attorney", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "employment", "encrypted_password", "ip", "last_sign_in_at", "last_sign_in_ip", "lead", "medical", "name", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["age", nil], ["attorney", nil], ["created_at", Fri, 30 Aug 2013 05:54:41 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", nil], ["employment", nil], ["encrypted_password", ""], ["ip", nil], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lead", nil], ["medical", nil], ["name", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 30 Aug 2013 05:54:41 UTC +00:00], ["zipcode", nil]]
+  [1m[36m (32.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mUPDATE "users" SET "age" = '28', "updated_at" = '2013-08-30 05:54:41.135500' WHERE "users"."id" = 88[0m
+  [1m[35m (41.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-08-30 05:54:41.179425', "current_sign_in_at" = '2013-08-30 05:54:41.179425', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-08-30 05:54:41.180157' WHERE "users"."id" = 88
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  Rendered registration/create.js.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 5.8ms | ActiveRecord: 79.5ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:43 -0400
+Processing by UsersController#update as JS
+  Parameters: {"zipcode"=>"23333", "id"=>"88"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "zipcode" = '23333', "updated_at" = '2013-08-30 05:54:43.686330' WHERE "users"."id" = 88
+  [1m[36m (50.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered users/update.js.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 3.2ms | ActiveRecord: 52.5ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:44 -0400
+Processing by UsersController#update as JS
+  Parameters: {"employment"=>"Making less than $1500 per month", "id"=>"88"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "employment" = 'Making less than $1500 per month', "updated_at" = '2013-08-30 05:54:44.507522' WHERE "users"."id" = 88
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.7ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:45 -0400
+Processing by UsersController#update as JS
+  Parameters: {"medical"=>"Yes", "id"=>"88"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  UPDATE "users" SET "medical" = 'Yes', "updated_at" = '2013-08-30 05:54:45.148485' WHERE "users"."id" = 88
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 1.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:45 -0400
+Processing by UsersController#update as JS
+  Parameters: {"attorney"=>"Yes", "id"=>"88"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.5ms)[0m  UPDATE "users" SET "attorney" = 'Yes', "updated_at" = '2013-08-30 05:54:45.809327' WHERE "users"."id" = 88
+  [1m[36m (1.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  Rendered users/update.js.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:47 -0400
+Processing by UsersController#update as JS
+  Parameters: {"name"=>"sdf sdf", "id"=>"88"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.6ms)[0m  UPDATE "users" SET "name" = 'sdf sdf', "updated_at" = '2013-08-30 05:54:47.609433' WHERE "users"."id" = 88
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users/88" for 127.0.0.1 at 2013-08-30 01:54:52 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ohPhG+evYG2lTnsHBKJJkZNVXuGmqmWMZIYtgz+RnX4=", "user"=>{"phone"=>"2223334433", "email"=>"sdf@sdf.com"}, "commit"=>"Get Guide!", "id"=>"88"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "88"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.8ms)[0m  UPDATE "users" SET "phone" = '2223334433', "email" = 'sdf@sdf.com', "updated_at" = '2013-08-30 05:54:52.177422' WHERE "users"."id" = 88
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+Completed 500 Internal Server Error in 576ms
+
+NoMethodError (undefined method `content' for #<Nokogiri::XML::NodeSet:0x00000103dd3e58>):
+  app/controllers/users_controller.rb:125:in `block in update'
+  app/controllers/users_controller.rb:96:in `update'
+
+
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/abhiramesh/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-08-30 01:57:08 -0400
+Processing by RegistrationController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sRcoLoJBllVjTiTgkk6KfXhIWMhG67dCbPAuPIlmMns=", "user"=>{"age"=>"28"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 88 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("age", "attorney", "created_at", "current_sign_in_at", "current_sign_in_ip", "email", "employment", "encrypted_password", "ip", "last_sign_in_at", "last_sign_in_ip", "lead", "medical", "name", "phone", "remember_created_at", "reset_password_sent_at", "reset_password_token", "sign_in_count", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21) RETURNING "id"  [["age", nil], ["attorney", nil], ["created_at", Fri, 30 Aug 2013 05:57:08 UTC +00:00], ["current_sign_in_at", nil], ["current_sign_in_ip", nil], ["email", nil], ["employment", nil], ["encrypted_password", ""], ["ip", "127.0.0.1"], ["last_sign_in_at", nil], ["last_sign_in_ip", nil], ["lead", nil], ["medical", nil], ["name", nil], ["phone", nil], ["remember_created_at", nil], ["reset_password_sent_at", nil], ["reset_password_token", nil], ["sign_in_count", 0], ["updated_at", Fri, 30 Aug 2013 05:57:08 UTC +00:00], ["zipcode", nil]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "age" = '28', "updated_at" = '2013-08-30 05:57:08.887589' WHERE "users"."id" = 89[0m
+  [1m[35m (36.0ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.9ms)[0m  UPDATE "users" SET "last_sign_in_at" = '2013-08-30 05:57:08.925471', "current_sign_in_at" = '2013-08-30 05:57:08.925471', "last_sign_in_ip" = '127.0.0.1', "current_sign_in_ip" = '127.0.0.1', "sign_in_count" = 1, "updated_at" = '2013-08-30 05:57:08.926750' WHERE "users"."id" = 89
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  Rendered registration/create.js.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 7.7ms | ActiveRecord: 46.5ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:10 -0400
+Processing by UsersController#update as JS
+  Parameters: {"zipcode"=>"33333", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mUser Load (2.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 89 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mUPDATE "users" SET "zipcode" = '33333', "updated_at" = '2013-08-30 05:57:10.841854' WHERE "users"."id" = 89[0m
+  [1m[35m (39.4ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.1ms)
+Completed 200 OK in 54ms (Views: 4.2ms | ActiveRecord: 43.8ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:11 -0400
+Processing by UsersController#update as JS
+  Parameters: {"employment"=>"Making less than $1500 per month", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "employment" = 'Making less than $1500 per month', "updated_at" = '2013-08-30 05:57:11.913425' WHERE "users"."id" = 89[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:12 -0400
+Processing by UsersController#update as JS
+  Parameters: {"medical"=>"Yes", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "medical" = 'Yes', "updated_at" = '2013-08-30 05:57:12.356466' WHERE "users"."id" = 89[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:12 -0400
+Processing by UsersController#update as JS
+  Parameters: {"attorney"=>"Yes", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "attorney" = 'Yes', "updated_at" = '2013-08-30 05:57:12.851224' WHERE "users"."id" = 89[0m
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:15 -0400
+Processing by UsersController#update as JS
+  Parameters: {"name"=>"test test", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.6ms)[0m  [1mUPDATE "users" SET "name" = 'test test', "updated_at" = '2013-08-30 05:57:15.308348' WHERE "users"."id" = 89[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  Rendered users/update.js.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 2.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users/89" for 127.0.0.1 at 2013-08-30 01:57:21 -0400
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sRcoLoJBllVjTiTgkk6KfXhIWMhG67dCbPAuPIlmMns=", "user"=>{"phone"=>"3334445544", "email"=>"sdfs@s.com"}, "commit"=>"Get Guide!", "id"=>"89"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "89"]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mUPDATE "users" SET "phone" = '3334445544', "email" = 'sdfs@s.com', "updated_at" = '2013-08-30 05:57:21.599274' WHERE "users"."id" = 89[0m
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  UPDATE "users" SET "lead" = '5385', "updated_at" = '2013-08-30 05:57:22.254766' WHERE "users"."id" = 89
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/logout
+Completed 302 Found in 662ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Processing by Devise::SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.1ms)
+  Rendered users/_form3.html.erb (0.2ms)
+  Rendered users/_form4.html.erb (0.1ms)
+  Rendered users/_form5.html.erb (0.1ms)
+  Rendered users/_form6.html.erb (0.3ms)
+  Rendered users/_form7.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /registration.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /registration.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-08-30 01:57:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)

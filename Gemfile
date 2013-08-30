@@ -10,6 +10,9 @@ gem 'json'
 gem 'pg', '0.14.1'
 gem 'client_side_validations'
 
+gem 'mechanize'
+gem 'json'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
