@@ -103,7 +103,6 @@ class UsersController < ApplicationController
           url = "https://leads.leadtracksystem.com/genericPostlead.php"
           params = {
             "TYPE" => '85',
-            "Test_Lead" => "1",
             "SRC" => 'PujiiTestSite',
             "Landing_Page" => "amp1",
             "IP_Address" => "75.2.92.149",
