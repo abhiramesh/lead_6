@@ -9,6 +9,7 @@ Mortgage3::Application.routes.draw do
   root to: 'static_pages#home'
 
   get '/thanks', to: 'static_pages#thanks'
+  get '/privacy', to: 'static_pages#privacy'
 
   post '/users/:id', to: 'users#update'
 

@@ -90,8 +90,47 @@ img.info-box{
   left: -200px;
 }
 
+.box-background{
+  width: 300px;
+  height: 175px;
+  background: #EEE;
+  opacity: 0.8;
+  border-radius: 30px;
+  top: -185px;
+  left: -200px;
+  position: relative;
+  padding: 20px;
+  text-align: left;
+}
+
+
+.box-title{
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.box-free{
+  font-weight: bold;
+  color: orangered;
+  font-size: 20px;
+}
+
+.box-learn{
+  font-style: italic;
+}
+
+.box-desc{
+  font-size: 16px;
+  padding: 10px 0px;
+}
+
+.box-bold{
+  font-weight: bold;
+  font-style: italic;
+}
+
 @media (max-width: 960px) {
-  img.info-box {
+  .box-background {
     position: inherit;
     margin-top: 20px;
   }
@@ -223,6 +262,14 @@ input#user_phone{
   border-top: solid 3px #313131;
 }
 
+.disclaimer{
+  font-size: 9px;
+}
+
+.privacy{
+  font-size: 11px;
+}
+
 @media (max-width: 960px) {
   .logos-box {
     top: 0px;
@@ -325,4 +372,15 @@ form{
 
 .back-link:hover{
   color: #093E67;
+}
+
+.terms-title{
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.terms-sub{
+  font-size: 14px;
+  font-weight: bold;
 }
