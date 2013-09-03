@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authorize, :except => [:new, :create, :edit, :update]
+  before_filter :authorize, :except => [:new, :create, :edit, :update, :results]
 
   require 'mechanize'
 
@@ -12,6 +12,10 @@ class UsersController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @users }
     end
+  end
+
+  def results
+    @users = User.all.sort
   end
 
   # GET /users/1

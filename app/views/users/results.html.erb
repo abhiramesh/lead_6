@@ -1,0 +1,33 @@
+<div class="container">
+	<% @users.each do |u| %>
+		<div class="row">
+			<div class="span1">
+				<%= u.campaign %>
+			</div>
+			<div class="span3">
+				<%= u.age %>
+			</div>
+			<div class="span2">
+				<%= u.zipcode %>
+			</div>
+			<div class="span2">
+				<%= u.employment %>
+			</div>
+			<div class="span1">
+				<%= u.attorney %>
+			</div>
+			<div class="span1">
+				<%= u.medical %>
+			</div>
+			<div class="span1">
+				<%= u.name %>
+			</div>
+			<div class="span1">
+				<%= u.name %>
+			</div>
+			<div class="span1">
+				<%= u.email %>
+			</div>
+		</div>
+	<% end %>
+</div>
