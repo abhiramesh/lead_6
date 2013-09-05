@@ -1,32 +1,90 @@
 <div class="container">
+	<div class="row">
+		<div class="span3">
+			Campaign
+		</div>
+		<div class="span1">
+			Age
+		</div>
+		<div class="span1">
+			Zip
+		</div>
+		<div class="span1">
+			Employ
+		</div>
+		<div class="span1">
+			Attorney
+		</div>
+		<div class="span1">
+			Medical
+		</div>
+		<div class="span1">
+			Name
+		</div>
+		<div class="span1">
+			Email
+		</div>
+		<div class="span1">
+			Phone
+		</div>
+	</div>
+	<br>
 	<% @users.each do |u| %>
 		<div class="row">
-			<div class="span1">
+			<div class="span3">
 				<%= u.campaign %>
 			</div>
-			<div class="span3">
+			<div class="span1">
 				<%= u.age %>
 			</div>
-			<div class="span2">
-				<%= u.zipcode %>
-			</div>
-			<div class="span2">
-				<%= u.employment %>
+			<div class="span1">
+				<% if u.zipcode %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 			<div class="span1">
-				<%= u.attorney %>
+				<% if u.employment %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 			<div class="span1">
-				<%= u.medical %>
+				<% if u.attorney %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 			<div class="span1">
-				<%= u.name %>
+				<% if u.medical %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 			<div class="span1">
-				<%= u.name %>
+				<% if u.name %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 			<div class="span1">
-				<%= u.email %>
+				<% if u.email %>
+					1
+				<% else %>
+					0
+				<% end %>
+			</div>
+			<div class="span1">
+				<% if u.phone %>
+					1
+				<% else %>
+					0
+				<% end %>
 			</div>
 		</div>
 	<% end %>
