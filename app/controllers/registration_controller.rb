@@ -1,7 +1,12 @@
 class RegistrationController < Devise::RegistrationsController
 
 	def create
-    @user = User.create(:ip => request.remote_ip, :campaign => request.referer.split('utm_campaign=').last)
+    if request.referer.to_s.include? "vinny"
+      campaign = request.referer.split('utm_campaign=').last
+    else
+      campaign = "other"
+    end
+    @user = User.create(:ip => request.remote_ip, :campaign => campaign)
     if params["user"]["age"]
       @user.age = params["user"]["age"]
       @user.save!
