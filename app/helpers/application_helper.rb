@@ -35,8 +35,8 @@ module ApplicationHelper
 
 	def attorney_options
 		[
-			["Yes", "Yes"],
-			["No", "No"]
+			["No", "No"],
+			["Yes", "Yes"]
 		]
 	end
 
