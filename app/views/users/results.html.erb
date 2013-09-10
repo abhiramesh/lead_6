@@ -1,95 +1,36 @@
 <div class="container">
 	<div class="row">
-		<div class="span2">
+		<div class="span4">
 			Campaign
 		</div>
-		<div class="span1">
-			Age
-		</div>
-		<div class="span1">
-			Zip
-		</div>
-		<div class="span1">
-			Employ
-		</div>
-		<div class="span1">
-			Attorney
-		</div>
-		<div class="span1">
-			Medical
-		</div>
-		<div class="span1">
-			Name
-		</div>
-		<div class="span1">
-			Email
-		</div>
-		<div class="span1">
-			Phone
-		</div>
-		<div class="span2">
+		<div class="span4">
 			Time
+		</div>
+		<div class="span4">
+			Qualified?
 		</div>
 	</div>
 	<br>
 	<% @users.each do |u| %>
 		<div class="row">
-			<div class="span2">
+			<div class="span3">
 				<%= u.campaign %>
 			</div>
-			<div class="span1">
-				<%= u.age %>
-			</div>
-			<div class="span1">
-				<% if u.zipcode %>
-					1
+			<div class="span3">
+				<% if u.zipcode && u.age && u.phone && u.email && u.name && u.employment && u.attorney && u.medical %>
+				Complete
 				<% else %>
-					0
+				Partial
 				<% end %>
 			</div>
-			<div class="span1">
-				<% if u.employment %>
-					1
+			<div class="span3">
+				<% if u.zipcode && u.age && u.phone && u.email && u.name && u.employment == "Making less than $1500 per month" && u.attorney == "No" && u.medical == "Yes" %>
+				Qualified
 				<% else %>
-					0
+				Non-Qualified
 				<% end %>
 			</div>
-			<div class="span1">
-				<% if u.attorney %>
-					1
-				<% else %>
-					0
-				<% end %>
-			</div>
-			<div class="span1">
-				<% if u.medical %>
-					1
-				<% else %>
-					0
-				<% end %>
-			</div>
-			<div class="span1">
-				<% if u.name %>
-					1
-				<% else %>
-					0
-				<% end %>
-			</div>
-			<div class="span1">
-				<% if u.email %>
-					1
-				<% else %>
-					0
-				<% end %>
-			</div>
-			<div class="span1">
-				<% if u.phone %>
-					1
-				<% else %>
-					0
-				<% end %>
-			</div>
-			<div class="span2">
+			<div class="span3">
 				<%= u.created_at %>
 			</div>
 		</div>

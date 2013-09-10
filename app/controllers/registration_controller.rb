@@ -1,7 +1,7 @@
 class RegistrationController < Devise::RegistrationsController
 
 	def create
-    if request.referer.to_s.include? "vinny"
+    if request.referer.to_s.downcase.include? "vinny"
       campaign = request.referer.split('utm_campaign=').last
     else
       campaign = "other"
