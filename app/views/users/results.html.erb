@@ -1,12 +1,12 @@
 <div class="container">
 	<div class="row">
-		<div class="span3">
+		<div class="span5">
 			Campaign
 		</div>
-		<div class="span3">
+		<div class="span2">
 			Complete?
 		</div>
-		<div class="span3">
+		<div class="span2">
 			Qualified?
 		</div>
 		<div class="span3">
@@ -16,17 +16,17 @@
 	<br>
 	<% @users.each do |u| %>
 		<div class="row">
-			<div class="span3">
+			<div class="span5">
 				<%= u.campaign %>
 			</div>
-			<div class="span3">
+			<div class="span2">
 				<% if u.zipcode && u.age && u.phone && u.email && u.name && u.employment && u.attorney && u.medical %>
 				Complete
 				<% else %>
 				Partial
 				<% end %>
 			</div>
-			<div class="span3">
+			<div class="span2">
 				<% if u.zipcode && u.age && u.phone && u.email && u.name && u.employment == "Making less than $1500 per month" && u.attorney == "No" && u.medical == "Yes" %>
 				<u><b>Qualified</b></u>
 				<% else %>
