@@ -112,7 +112,6 @@ class UsersController < ApplicationController
             "IP_Address" => "75.2.92.149",
             "First_Name" => @user.name.split(' ')[0],
             "Last_Name" => @user.name.split(' ')[1],
-            "State" => "PA",
             "Zip" => @user.zipcode,
             "Email" => @user.email,
             "Day_Phone" => @user.phone,
