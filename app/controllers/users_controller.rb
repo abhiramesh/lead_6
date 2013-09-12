@@ -146,8 +146,8 @@ class UsersController < ApplicationController
                 "Employment_Status" => @user.employment,
                 "Medical_Status" => @user.medical,
                 "Representation_Status" => @user.attorney,
-                "Unsecured Debt" => "Yes, I need debt help",
-                "Student Loans" => "Yes, I need student debt help"
+                "Unsecured Debt" => "No, I do not need help",
+                "Student Loans" => "No, I do not need student debt help"
               }
               response = a.post(url, params)
               puts d = Nokogiri::XML(response.content)
