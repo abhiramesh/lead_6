@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_filter :authorize, :except => [:new, :create, :edit, :update, :results]
 
   require 'mechanize'
+  require 'geokit'
 
   # GET /users
   # GET /users.json
@@ -104,29 +105,33 @@ class UsersController < ApplicationController
         format.js {}
         if @user.email != nil
           a = Mechanize.new
-          url = "https://leads.leadtracksystem.com/genericPostlead.php"
-          params = {
-            "TYPE" => '85',
-            "SRC" => "PujiiTestSite",
-            "Landing_Page" => "amp1",
-            "IP_Address" => "75.2.92.149",
-            "First_Name" => @user.name.split(' ')[0],
-            "Last_Name" => @user.name.split(' ')[1],
-            "State" => "PA",
-            "Zip" => @user.zipcode,
-            "Email" => @user.email,
-            "Day_Phone" => @user.phone,
-            "Age" => @user.age,
-            "Employment_Status" => @user.employment,
-            "Medical_Status" => @user.medical,
-            "Representation_Status" => @user.attorney,
-            "Unsecured Debt" => "Yes, I need debt help",
-            "Student Loans" => "Yes, I need student debt help"
-          }
-          response = a.post(url, params)
-          d = Nokogiri::XML(response.content)
-          @user.lead = d.xpath("//lead_id").text
-          @user.save!
+          geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
+          if geo.success
+            state = geo.state
+            url = "https://leads.leadtracksystem.com/genericPostlead.php"
+            params = {
+              "TYPE" => '85',
+              "SRC" => "PujiiTestSite",
+              "Landing_Page" => "amp1",
+              "IP_Address" => "75.2.92.149",
+              "First_Name" => @user.name.split(' ')[0],
+              "Last_Name" => @user.name.split(' ')[1],
+              "State" => state,
+              "Zip" => @user.zipcode,
+              "Email" => @user.email,
+              "Day_Phone" => @user.phone,
+              "Age" => @user.age,
+              "Employment_Status" => @user.employment,
+              "Medical_Status" => @user.medical,
+              "Representation_Status" => @user.attorney,
+              "Unsecured Debt" => "Yes, I need debt help",
+              "Student Loans" => "Yes, I need student debt help"
+            }
+            response = a.post(url, params)
+            d = Nokogiri::XML(response.content)
+            @user.lead = d.xpath("//lead_id").text
+            @user.save!
+          end
         end
       else
         format.html { render action: "edit" }
