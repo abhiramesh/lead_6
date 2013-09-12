@@ -36566,3 +36566,183 @@ Served asset /static_pages.js - 304 Not Modified (0ms)
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-09-12 00:13:18 -0400
 Served asset /users.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130912195354')[0m
+  [1m[35m (61.0ms)[0m  COMMIT
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to TestUsersIndex (20130912200238)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to AddUsersIndex (20130912201110)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (92.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+PG::Error: ERROR:  could not create unique index "index_users_on_email"
+DETAIL:  Key (email)=(test@test.com) is duplicated.
+: CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[35m (0.4ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+  [1m[36m (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130425195728)
+Migrating to AddDeviseToUsers (20130425200059)
+Migrating to AddNewDetailsTousers (20130829015829)
+Migrating to AddIpAndLeadToUsers (20130830053110)
+Migrating to AddAdInfoToUses (20130903015037)
+Migrating to AddQualifyToUsers (20130912023152)
+Migrating to AddExtraToUsers (20130912031552)
+Migrating to RemoveIndexFromUsers (20130912195354)
+Migrating to AddUsersIndex (20130912201110)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130912201110')[0m
+  [1m[35m (1.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
