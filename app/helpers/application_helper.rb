@@ -22,7 +22,7 @@ module ApplicationHelper
 	def employment_options
 		[
 			["Making less than $1500 per month", "Making less than $1500 per month"],
-			["Making more than $1500 per month", "Making more than $1500 per month"]
+			["Making more than $1500 per month", "Making over than $1500 per month"]
 		]
 	end
 
@@ -40,26 +40,17 @@ module ApplicationHelper
 		]
 	end
 
-
-	def home_value_options
+	def debt_options
 		[
-			["0-$150,000", "0-$150,000"],
-			["$150,000-$300,000", "$150,000-$300,000"],
-			["$300,000-$500,000", "$300,000-$500,000"],
-			["$500,000-$750,000", "$500,000-$750,000"],
-			["$750,000-$1,000,000","$750,000-$1,000,000"],
-			["$1,000,000+","$1,000,000+"]
+			["Yes, I need debt help", "Yes, I need debt help"],
+			["No, I do not need help", "No, I do not need help"]
 		]
 	end
 
-	def mortgage_balance_options
+	def loan_options
 		[
-			["0-$150,000", "0-$150,000"],
-			["$150,000-$300,000", "$150,000-$300,000"],
-			["$300,000-$500,000", "$300,000-$500,000"],
-			["$500,000-$750,000", "$500,000-$750,000"],
-			["$750,000-$1,000,000","$750,000-$1,000,000"],
-			["$1,000,000+","$1,000,000+"]
+			["Yes, I need student debt help", "Yes, I need student debt help"],
+			["No, I do not need student debt help", "No, I do not need student debt help"]
 		]
 	end
 

@@ -1,0 +1,45 @@
+<div class="container bgimg" align="center">
+	<img src="/assets/logo.png" class="logo">
+	<div class="formimg">
+		<div class="form-heading">
+			Do You Qualify for Benefits?
+		</div>
+		<div class="progress">
+			<div class="bar" style="width:10%;"></div>
+		</div>
+		<%= form_for @user do |f| %>
+			<%= f.label :debt, 'Do you need help paying off debts?' %>
+			<%= f.select :debt, options_for_select(debt_options), :onchange => ("$('.edit_user').submit()") %>
+			<div id="newsubmit1"/>
+			<%= f.submit "Next >>", :class => "submit" %> 
+		<% end %>
+	</div>
+</div>
+<div class="box-background">
+	<div class="box-title">
+		Receive a <span class="box-free">FREE</span> disability guide
+	</div>
+	<div class="box-learn">
+		Learn:
+	</div>
+	<div class="box-desc">
+		How to <span class="box-bold">qualify</span> for disability
+	</div>
+	<div class="box-desc">
+		How to <span class="box-bold">apply</span> for disability
+	</div>
+	<div class="box-desc">
+		How to <span class="box-bold">not be denied</span> your benefits
+	</div>
+</div>
+<div class="container">
+	<div class="logos-box">
+		<img src="/assets/logos.png" class="logos">
+	</div>
+	<div class="disclaimer">
+		<div class="privacy">
+			<a href="/privacy"> Privacy Policy</a>
+		</div>
+		Disclaimer: THIS IS AN ADVERTISEMENT. Advertising is paid for by participating attorneys and advocates. The site is not an attorney referral service. This website is privately owned and is not affiliated with or endorsed by Social Security Administration or any other government agency. The promotion of this website is sponsored exclusively by professional Social Security Attorneys and Advocacy Groups, in effort to provide services to the public for Disability issues.
+	</div>
+</div>

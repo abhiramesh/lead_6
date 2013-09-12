@@ -27,5 +27,4 @@ params = {
 
 response = a.post(url, params)
 
-d = Nokogiri::XML(response.content)
-puts d.xpath("//lead_id").text
+puts d = Nokogiri::XML(response.content)

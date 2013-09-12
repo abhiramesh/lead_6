@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authorize, :except => [:new, :create, :edit, :update, :results]
+  before_filter :authorize, :except => [:new, :create, :edit, :update, :results, :extra_info, :extra_info_2]
 
   require 'mechanize'
   require 'geokit'
@@ -17,6 +17,22 @@ class UsersController < ApplicationController
 
   def results
     @users = User.all.sort
+  end
+
+  def extra_info
+    if current_user
+      @user = current_user
+    else
+      redirect_to root_path
+    end
+  end
+
+  def extra_info_2
+    if current_user
+      @user = current_user
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /users/1
@@ -98,46 +114,90 @@ class UsersController < ApplicationController
       @user.email = params["email"]
       @user.save!
     end
-    respond_to do |format|
+    if params["debt"]
+      @user.debt = params["debt"]
+      @user.save!
+    end
+    if params["loan"]
+      @user.debt = params["loan"]
+      @user.save!
+    end
       if @user.update_attributes(params[:user])
-        format.html { redirect_to '/logout' }
-        format.json { head :no_content }
-        format.js {}
-        if @user.email != nil
-          a = Mechanize.new
-          geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
-          if geo.success
-            state = geo.state
-            url = "https://leads.leadtracksystem.com/genericPostlead.php"
-            params = {
-              "TYPE" => '85',
-              "SRC" => "PujiiTestSite",
-              "Landing_Page" => "amp1",
-              "IP_Address" => "75.2.92.149",
-              "First_Name" => @user.name.split(' ')[0],
-              "Last_Name" => @user.name.split(' ')[1],
-              "State" => state,
-              "Zip" => @user.zipcode,
-              "Email" => @user.email,
-              "Day_Phone" => @user.phone,
-              "Age" => @user.age,
-              "Employment_Status" => @user.employment,
-              "Medical_Status" => @user.medical,
-              "Representation_Status" => @user.attorney,
-              "Unsecured Debt" => "Yes, I need debt help",
-              "Student Loans" => "Yes, I need student debt help"
-            }
-            response = a.post(url, params)
-            d = Nokogiri::XML(response.content)
-            @user.lead = d.xpath("//lead_id").text
-            @user.save!
-          end
+        if @user.phone && @user.email && @user.name && @user.zipcode && @user.age && @user.employment == "Making less than $1500 per month" && @user.attorney == "No" && @user.medical == "Yes"
+          @user.qualified = true
+          @user.save!
+            a = Mechanize.new
+            geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
+            if geo.success
+              state = geo.state
+              url = "https://leads.leadtracksystem.com/genericPostlead.php"
+              params = {
+                #"Test_Lead" => 1,
+                "TYPE" => '85',
+                "SRC" => "PujiiTestSite",
+                "Landing_Page" => "amp1",
+                "IP_Address" => "75.2.92.149",
+                "First_Name" => @user.name.split(' ')[0],
+                "Last_Name" => @user.name.split(' ')[1],
+                "State" => state,
+                "Zip" => @user.zipcode,
+                "Email" => @user.email,
+                "Day_Phone" => @user.phone,
+                "Age" => @user.age,
+                "Employment_Status" => @user.employment,
+                "Medical_Status" => @user.medical,
+                "Representation_Status" => @user.attorney,
+                "Unsecured Debt" => "Yes, I need debt help",
+                "Student Loans" => "Yes, I need student debt help"
+              }
+              response = a.post(url, params)
+              puts d = Nokogiri::XML(response.content)
+              @user.lead = d.xpath("//lead_id").text
+              @user.save!
+            end
+          redirect_to '/logout'
+        elsif @user.phone && @user.qualified == nil
+          @user.qualified = false
+          @user.save!
+          redirect_to '/extrainfo1'
+        elsif @user.phone && @user.qualified == false && @user.loan == nil
+          redirect_to '/extrainfo2'
+        elsif @user.phone && @user.loan && @user.debt
+            a = Mechanize.new
+            geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
+            if geo.success
+              state = geo.state
+              url = "https://leads.leadtracksystem.com/genericPostlead.php"
+              params = {
+                #"Test_Lead" => 1,
+                "TYPE" => '85',
+                "SRC" => "PujiiTestSite",
+                "Landing_Page" => "amp1",
+                "IP_Address" => "75.2.92.149",
+                "First_Name" => @user.name.split(' ')[0],
+                "Last_Name" => @user.name.split(' ')[1],
+                "State" => state,
+                "Zip" => @user.zipcode,
+                "Email" => @user.email,
+                "Day_Phone" => @user.phone,
+                "Age" => @user.age,
+                "Employment_Status" => @user.employment,
+                "Medical_Status" => @user.medical,
+                "Representation_Status" => @user.attorney,
+                "Unsecured Debt" => @user.debt,
+                "Student Loans" => @user.loan
+              }
+              response = a.post(url, params)
+              puts d = Nokogiri::XML(response.content)
+              @user.lead = d.xpath("//lead_id").text
+              @user.save!
+            end
+          redirect_to '/logout'
         end
       else
         format.html { render action: "edit" }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
-    end
   end
 
   # DELETE /users/1
