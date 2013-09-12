@@ -132,7 +132,6 @@ class UsersController < ApplicationController
               state = geo.state
               url = "https://leads.leadtracksystem.com/genericPostlead.php"
               params = {
-                #"Test_Lead" => 1,
                 "TYPE" => '85',
                 "SRC" => "PujiiTestSite",
                 "Landing_Page" => "amp1",
@@ -162,14 +161,13 @@ class UsersController < ApplicationController
           redirect_to '/extrainfo1'
         elsif @user.phone && @user.qualified == false && @user.loan == nil
           redirect_to '/extrainfo2'
-        elsif @user.phone && @user.loan && @user.debt
+        elsif @user.phone && @user.loan != nil && @user.debt != nil
             a = Mechanize.new
             geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
             if geo.success
               state = geo.state
               url = "https://leads.leadtracksystem.com/genericPostlead.php"
               params = {
-                #"Test_Lead" => 1,
                 "TYPE" => '85',
                 "SRC" => "PujiiTestSite",
                 "Landing_Page" => "amp1",
