@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authorize, :except => [:new, :create, :edit, :update, :results, :extra_info, :extra_info_2]
+  before_filter :authorize, :except => [:new, :create, :edit, :update, :results, :extra_info, :extra_info_2, :checkzip]
 
   require 'mechanize'
   require 'geokit'
@@ -17,6 +17,15 @@ class UsersController < ApplicationController
 
   def results
     @users = User.all.sort
+  end
+
+  def checkzip
+    geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(params["zipcode"])
+      if geo.success
+        render json: "yes".to_json
+      else
+        render json: "no".to_json
+      end
   end
 
   def extra_info

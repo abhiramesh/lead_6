@@ -23,11 +23,11 @@
 	});
 
 	$('input#user_phone').blur(function(event){
-		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10 || $('input#user_phone').val().replace(/\D+/g,'')[0] == 0 || $('input#user_phone').val().replace(/\D+/g,'')[0] == 1) {
 			event.preventDefault();
-			$('#phone_error').empty().append("Please enter your phone number");
+			$('#phone_error').empty().append("Please enter a valid phone number");
 		}
-		if ($('input#user_phone').val().replace(/\D+/g,'').length == 10) {
+		if ($('input#user_phone').val().replace(/\D+/g,'').length == 10 && $('input#user_phone').val().replace(/\D+/g,'')[0] != 0 && $('input#user_phone').val().replace(/\D+/g,'')[0] != 1) {
 			$('#phone_error').empty();
 		}
 	});
@@ -48,7 +48,7 @@
 			event.preventDefault();
 			$('#email_error').empty().append("Please enter a valid email");
 		}
-		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10) {
+		if ($('input#user_phone').val().replace(/\D+/g,'').length != 10 || $('input#user_phone').val().replace(/\D+/g,'')[0] == 0 || $('input#user_phone').val().replace(/\D+/g,'')[0] == 1) {
 			event.preventDefault();
 			$('#phone_error').empty().append("Please enter your phone number");
 		}
