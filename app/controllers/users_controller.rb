@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   require 'mechanize'
   require 'geokit'
+  require 'area'
 
   # GET /users
   # GET /users.json
@@ -20,12 +21,19 @@ class UsersController < ApplicationController
   end
 
   def checkzip
-    geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(params["zipcode"])
-      if geo.success
-        render json: "yes".to_json
-      else
-        render json: "no".to_json
-      end
+    # geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(params["zipcode"])
+    #   if geo.success
+    #     render json: "yes".to_json
+    #   else
+    #     render json: "no".to_json
+    #   end
+
+    if params["zipcode"].length == 5 && params["zipcode"].to_region != nil
+      render json: "yes".to_json
+    else
+      render json: "no".to_json
+    end
+
   end
 
   def extra_info
