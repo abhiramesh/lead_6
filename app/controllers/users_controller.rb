@@ -119,6 +119,10 @@ class UsersController < ApplicationController
       @user.attorney = params["attorney"]
       @user.save!
     end
+    if params["previous"]
+      @user.previous = params["previous"]
+      @user.save!
+    end
     if params["name"]
       @user.name = params["name"]
       @user.save!
@@ -171,6 +175,7 @@ class UsersController < ApplicationController
                 "Employment_Status" => @user.employment,
                 "Medical_Status" => @user.medical,
                 "Representation_Status" => @user.attorney,
+                "Previously_Applied" => @user.previous,
                 "Unsecured Debt" => "No, I do not need help",
                 "Student Loans" => "No, I do not need student debt help",
                 "Pub_ID" => lead_src
@@ -216,6 +221,7 @@ class UsersController < ApplicationController
                 "Employment_Status" => @user.employment,
                 "Medical_Status" => @user.medical,
                 "Representation_Status" => @user.attorney,
+                "Previously_Applied" => @user.previous,
                 "Unsecured Debt" => @user.debt,
                 "Student Loans" => @user.loan,
                 "Pub_ID" => lead_src
