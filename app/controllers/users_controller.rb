@@ -123,6 +123,10 @@ class UsersController < ApplicationController
       @user.previous = params["previous"]
       @user.save!
     end
+    if params["desc"]
+      @user.desc = params["desc"]
+      @user.save!
+    end
     if params["name"]
       @user.name = params["name"]
       @user.save!
