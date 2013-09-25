@@ -182,6 +182,7 @@ class UsersController < ApplicationController
                 "Previously_Applied" => @user.previous,
                 "Unsecured Debt" => "No, I do not need help",
                 "Student Loans" => "No, I do not need student debt help",
+                "Description" => @user.desc,
                 "Pub_ID" => lead_src
               }
               response = a.post(url, params)
@@ -228,6 +229,7 @@ class UsersController < ApplicationController
                 "Previously_Applied" => @user.previous,
                 "Unsecured Debt" => @user.debt,
                 "Student Loans" => @user.loan,
+                "Description" => @user.desc,
                 "Pub_ID" => lead_src
               }
               response = a.post(url, params)
