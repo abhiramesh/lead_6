@@ -12,6 +12,7 @@ class RegistrationController < Devise::RegistrationsController
       @user.save!
     end
     sign_in @user
+    render json: "signedin".to_json
   end
     
 
