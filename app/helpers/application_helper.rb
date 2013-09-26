@@ -63,4 +63,41 @@ module ApplicationHelper
 		]
 	end
 
+	def desc_options
+		[
+			["Arthritis", "Arthritis"],
+			["Autism Spectrum", "Autism Spectrum"],
+			["Back Injury", "Back Injury"],
+			["Bipolar", "Bipolar"],
+			["Brain Injury", "Brain Injury"],
+			["Byetta", "Byetta"],
+			["Cancer", "Cancer"],
+			["Chronic Fatigue", "Chronic Fatigue"],
+			["Depression", "Depression"],
+			["Diabetes", "Diabetes"],
+			["Fibromyalgia", "Fibromyalgia"],
+			["Granuflo illness", "Granuflo illness"],
+			["Head Injury", "Head Injury"],
+			["Hearing Related", "Hearing Related"],
+			["Heart Condition", "Heart Condition"],
+			["Herniated Disc", "Herniated Disc"],
+			["HIV Aids", "HIV Aids"],
+			["Lipitor", "Lipitor"],
+			["Loss of Limb", "Loss of Limb"],
+			["Mesothelioma", "Mesothelioma"],
+			["Nuerological", "Nuerological"],
+			["Ocella", "Ocella"],
+			["Orthopedic", "Orthopedic"],
+			["Psychological", "Psychological"],
+			["Ruptured Disc", "Ruptured Disc"],
+			["Skin Disease", "Skin Disease"],
+			["Sleep Apnea", "Sleep Apnea"],
+			["Stroke Related", "Stroke Related"],
+			["Transvaginal Mesh", "Transvaginal Mesh"],
+			["Vision Related", "Vision Related"],
+			["Yasmin", "Yasmin"],
+			["Yaz", "Yaz"],
+		]
+	end
+
 end
