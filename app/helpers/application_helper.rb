@@ -21,8 +21,8 @@ module ApplicationHelper
 
 	def employment_options
 		[
-			["Making less than $1500 per month", "Making less than $1500 per month"],
-			["Making more than $1500 per month", "Making over than $1500 per month"]
+			["Yes", "Making less than $1500 per month"],
+			["No", "Making over than $1500 per month"]
 		]
 	end
 
