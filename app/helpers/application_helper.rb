@@ -97,6 +97,7 @@ module ApplicationHelper
 			["Vision Related", "Vision Related"],
 			["Yasmin", "Yasmin"],
 			["Yaz", "Yaz"],
+			["Other/Not Listed", "Other/Not Listed"]
 		]
 	end
 
