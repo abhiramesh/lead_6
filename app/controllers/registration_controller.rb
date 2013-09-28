@@ -6,13 +6,15 @@ class RegistrationController < Devise::RegistrationsController
     else
       campaign = "other"
     end
-    @user = User.create(:ip => request.remote_ip, :campaign => campaign)
-    if params["user"]["age"]
-      @user.age = params["user"]["age"]
-      @user.save!
+    if params["user"] && params["user"]["age"]
+      age = params["user"]["age"]
     end
+    @user = User.create(:ip => request.remote_ip, :campaign => campaign, :age => age)
     sign_in @user
-#    render json: "signedin".to_json
+    respond_to do |format|
+      format.html { redirect_to '/'}
+      format.js
+    end
   end
     
 
