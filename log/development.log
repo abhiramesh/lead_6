@@ -46786,3 +46786,105 @@ Served asset /static_pages.js - 200 OK (0ms)
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-03 09:34:00 -0400
 Served asset /users.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Passing a block to devise_for is deprecated. Please remove the block from devise_for (only the block, the call to devise_for must still exist) and call devise_scope :user do ... end with the block instead. (called from block in <top (required)> at /Users/abhiramesh/rails_projects/lead_1_amp/config/routes.rb:3)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-03 13:39:53 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (1.3ms)
+  Rendered users/_form3.html.erb (1.1ms)
+  Rendered users/_form4.html.erb (1.0ms)
+  Rendered users/_form5.html.erb (1.0ms)
+  Rendered users/_form5b.html.erb (1.0ms)
+  Rendered users/_form5c.html.erb (1.7ms)
+  Rendered users/_form6.html.erb (1.8ms)
+  Rendered users/_form7.html.erb (119.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (639.1ms)
+Completed 200 OK in 1711ms (Views: 1047.0ms | ActiveRecord: 421.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (135ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /registration.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /static_pages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /registration.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /static_pages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-03 13:39:55 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered users/_form2.html.erb (0.3ms)
+  Rendered users/_form3.html.erb (0.3ms)
+  Rendered users/_form4.html.erb (0.3ms)
+  Rendered users/_form5.html.erb (0.3ms)
+  Rendered users/_form5b.html.erb (0.3ms)
+  Rendered users/_form5c.html.erb (0.9ms)
+  Rendered users/_form6.html.erb (0.5ms)
+  Rendered users/_form7.html.erb (2.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/registration.css?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /registration.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/registration.js?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /registration.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-10-03 13:40:37 -0400
+Served asset /users.js - 200 OK (0ms)
