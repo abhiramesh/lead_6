@@ -13,5 +13,11 @@ class StaticPagesController < ApplicationController
 
 	def privacy
 	end
+
+	def fees
+	end
+
+	def about_us
+	end
 	
 end
