@@ -17,7 +17,7 @@ class UsersController < ApplicationController
   end
 
   # def csvi
-  #   @users = User.all.sort
+  #   @users = User.first(10)
   #     send_data User.to_csv
   # end
 

@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
 
 
   # def self.to_csv
-  #   CSV.generate do |csv|
+  #   CSV.generate(col_sep: "\t") do |csv|
   #     csv << ["Name", "Email", "Phone", "Campaign"]
   #     all.each do |user|
   #     	row = []
