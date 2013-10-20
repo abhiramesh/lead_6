@@ -144,6 +144,10 @@ class UsersController < ApplicationController
       @user.email = params["email"]
       @user.save!
     end
+    if params["consent"]
+      @user.consent = params["consent"]
+      @user.save!
+    end
     if params["debt"]
       @user.debt = params["debt"]
       @user.save!

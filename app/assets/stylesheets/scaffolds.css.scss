@@ -45,10 +45,10 @@
 
 .formimg{
   background-image: url("form.png");
-  height: 210px;
+  height: 235px;
   width: 400px;
   text-align: left;
-  background-size: 400px 300px;
+  background-size: 400px 330px;
   background-repeat: no-repeat;
   position: relative;
   top: 35px;
@@ -282,6 +282,10 @@ label{
 
 #last_name{
   width: 100px;
+}
+
+#consent{
+  font-size: 10px;
 }
 
 input#user_email{
