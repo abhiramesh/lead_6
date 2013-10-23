@@ -2,18 +2,18 @@
 	<div class="row">
 		<div class="span2">
 			<%= f.label :phone %>
-			<%= f.text_field :phone, :placeholder => "215-444-3344" %>
+			<%= f.text_field :phone, :class => "xverify_phone", :placeholder => "215-444-3344" %>
 		</div>
 		<div class="span2">
 			<%= f.label :email %>
-			<%= f.text_field :email, :placeholder => "bob@yahoo.com" %>
+			<%= f.text_field :email, :class => "xverify_email", :placeholder => "bob@yahoo.com" %>
 		</div>
 	</div>
 	<div class="desc">
 	</div>
 	<div id="consent">
-		<%= f.check_box :consent, {:checked => true}, "Yes", "No" %>
-		I agree to be contacted by phone or email according to these <a target="_blank" href="/privacy">terms</a>
+		<%= f.check_box :consent, {:checked => false}, "Yes", "No" %>
+		I consent to be called and/or texted by or on behalf of this inquiry by an autodialer or a prerecorded voice message at the number above. My consent does not require purchase. Standard cellular rates will apply if applicable.
 	</div>
 	<div class="message" id="phone_error"></div>
 	<div class="message" id="email_error"></div>

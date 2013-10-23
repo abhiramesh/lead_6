@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :authorize, :except => [:new, :create, :edit, :update, :results, :extra_info, :extra_info_2, :checkzip, :csvi]
+  before_filter :authorize, :except => [:new, :create, :edit, :update, :results, :extra_info, :extra_info_2]
 
   require 'mechanize'
   require 'geokit'
@@ -25,21 +25,21 @@ class UsersController < ApplicationController
     @users = User.all.sort
   end
 
-  def checkzip
-    # geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(params["zipcode"])
-    #   if geo.success
-    #     render json: "yes".to_json
-    #   else
-    #     render json: "no".to_json
-    #   end
+  # def checkzip
+  #   # geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(params["zipcode"])
+  #   #   if geo.success
+  #   #     render json: "yes".to_json
+  #   #   else
+  #   #     render json: "no".to_json
+  #   #   end
 
-    if params["zipcode"].length == 5 && params["zipcode"].to_region != nil
-      render json: "yes".to_json
-    else
-      render json: "no".to_json
-    end
+  #   if params["zipcode"].length == 5 && params["zipcode"].to_region != nil
+  #     render json: "yes".to_json
+  #   else
+  #     render json: "no".to_json
+  #   end
 
-  end
+  # end
 
   def extra_info
     if current_user
@@ -112,6 +112,10 @@ class UsersController < ApplicationController
       @user.age = params["age"]
       @user.save!
     end
+    if params["veteran"]
+      @user.veteran = params["veteran"]
+      @user.save!
+    end
     if params["employment"]
       @user.employment = params["employment"]
       @user.save!
@@ -164,17 +168,20 @@ class UsersController < ApplicationController
             geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
             if geo.success
               state = geo.state
-              if @user.campaign.to_s.downcase.include? "vinny"
-                lead_src = "PUJ"
-              elsif @user.campaign == "other"
-                lead_src = "REV"
-              else
-                lead_src = "RAW"
-              end
+            else
+              state = ""
+            end
+            if @user.campaign.to_s.downcase.include? "vinny"
+              lead_src = "PUJ"
+            elsif @user.campaign == "other"
+              lead_src = "REV"
+            else
+              lead_src = "RAW"
+            end
               url = "https://leads.leadtracksystem.com/genericPostlead.php"
               params = {
                 "TYPE" => '85',
-                "SRC" => "PujiiComp1",
+                "SRC" => "PujVA",
                 "Trusted_Form" => @user.trusted,
                 "Landing_Page" => "amp1",
                 "IP_Address" => "75.2.92.149",
@@ -193,13 +200,13 @@ class UsersController < ApplicationController
                 "Unsecured Debt" => "No, I do not need help",
                 "Student Loans" => "No, I do not need student debt help",
                 "Description" => @user.desc,
+                "Military_Status" => @user.veteran,
                 "Pub_ID" => lead_src
               }
               response = a.post(url, params)
               puts d = Nokogiri::XML(response.content)
               @user.lead = d.xpath("//lead_id").text
               @user.save!
-            end
           redirect_to '/logout'
         elsif @user.phone && @user.qualified == nil
           @user.qualified = false
@@ -212,6 +219,9 @@ class UsersController < ApplicationController
             geo = GeoKit::Geocoders::MultiGeocoder.multi_geocoder(@user.zipcode)
             if geo.success
               state = geo.state
+            else
+              state = ""
+            end
               if @user.campaign.to_s.downcase.include? "vinny"
                 lead_src = "PUJ"
               elsif @user.campaign == "other"
@@ -222,7 +232,7 @@ class UsersController < ApplicationController
               url = "https://leads.leadtracksystem.com/genericPostlead.php"
               params = {
                 "TYPE" => '85',
-                "SRC" => "PujiiComp1",
+                "SRC" => "PujVA",
                 "Trusted_Form" => @user.trusted,
                 "Landing_Page" => "amp1",
                 "IP_Address" => "75.2.92.149",
@@ -241,13 +251,13 @@ class UsersController < ApplicationController
                 "Unsecured Debt" => @user.debt,
                 "Student Loans" => @user.loan,
                 "Description" => @user.desc,
+                "Military_Status" => @user.veteran,
                 "Pub_ID" => lead_src
               }
               response = a.post(url, params)
               puts d = Nokogiri::XML(response.content)
               @user.lead = d.xpath("//lead_id").text
               @user.save!
-            end
           redirect_to '/logout'
         end
       else

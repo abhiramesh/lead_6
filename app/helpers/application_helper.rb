@@ -19,6 +19,14 @@ module ApplicationHelper
 		]
 	end
 
+	def veteran_options
+		[
+			["Active Duty", "Active Duty"],
+			["Veteran", "Veteran"],
+			["Retired Military", "Retired Military"],
+		]
+	end
+
 	def employment_options
 		[
 			["Yes", "Making less than $1500 per month"],

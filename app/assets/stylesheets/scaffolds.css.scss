@@ -12,6 +12,10 @@
   .bgimg {
     height: inherit;
   }
+
+  .disclaimer{
+    background: white;
+  }
 }
 
 @media (max-width: 960px) {
@@ -79,7 +83,7 @@
     position: inherit;
     margin-top: 50px;
     width: 95%;
-    background-size: 100% 300px;
+    background-size: 100% 330px;
   }
 
   .progress {
@@ -92,6 +96,10 @@
 
   .desc {
     width: 80%;
+  }
+
+  #form2b {
+    padding-left: 6% !important;
   }
 
   #form3 {
@@ -126,7 +134,7 @@
 .logo{
   width: 350px;
   position: relative;
-  top: 15px;
+  top: 8px;
   left: -260px;
 }
 
@@ -244,6 +252,12 @@ label{
   display: none;
   padding-left: 80px;
 }
+
+#form2b{
+  display: none;
+  padding-left: 80px;
+}
+
 #form3{
   display: none;
   padding-left: 80px;
@@ -273,7 +287,7 @@ label{
 }
 #form7{
   display: none;
-  padding-left: 80px;
+  padding-left: 45px;
 }
 
 #first_name{
@@ -285,7 +299,8 @@ label{
 }
 
 #consent{
-  font-size: 10px;
+  font-size: 8px;
+  width: 92%;
 }
 
 input#user_email{
@@ -316,7 +331,7 @@ input#user_phone{
 }
 
 .download-guide{
-  color: orangered;
+  color: orangered !important;
   font-size: 27px;
 }
 

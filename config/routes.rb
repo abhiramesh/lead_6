@@ -20,8 +20,9 @@ Mortgage3::Application.routes.draw do
   # get '/csvi', to: 'users#csvi'
   get '/about_us', to: 'static_pages#about_us'
   get '/fees', to: 'static_pages#fees'
+  get '/nj', to: "static_pages#nj"
 
-  post '/checkzip', to: 'users#checkzip'
+  # post '/checkzip', to: 'users#checkzip'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
