@@ -11,13 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131023203129) do
+ActiveRecord::Schema.define(:version => 20131026014224) do
 
   create_table "users", :force => true do |t|
-    t.string   "zipcode"
     t.string   "name"
     t.string   "email"
     t.string   "phone"
+    t.string   "ip"
+    t.string   "lead"
+    t.string   "campaign"
+    t.string   "trusted"
+    t.string   "business_name"
+    t.string   "state"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -29,21 +34,8 @@ ActiveRecord::Schema.define(:version => 20131023203129) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.string   "age"
-    t.string   "employment"
-    t.string   "attorney"
-    t.string   "medical"
-    t.string   "ip"
-    t.string   "lead"
-    t.string   "campaign"
     t.boolean  "qualified"
-    t.string   "debt"
-    t.string   "loan"
-    t.string   "previous"
-    t.text     "desc"
-    t.string   "trusted"
-    t.string   "consent"
-    t.string   "veteran"
+    t.string   "bank"
   end
 
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true

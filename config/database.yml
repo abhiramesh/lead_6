@@ -8,7 +8,7 @@ development:
   encoding: unicode
   host: localhost
   port: 5432
-  database: lead_5_development
+  database: lead_6_development
   pool: 5
   timeout: 5000
   username: abhiramesh
@@ -22,7 +22,7 @@ test:
   encoding: unicode
   host: localhost
   port: 5432
-  database: lead_5_test
+  database: lead_6_test
   pool: 5
   username: abhiramesh
   password: password
@@ -30,7 +30,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: lead_5_production
+  database: lead_6_production
   pool: 5
   username: abhiramesh
   password: password
