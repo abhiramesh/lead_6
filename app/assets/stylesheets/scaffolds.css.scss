@@ -2,8 +2,56 @@
 
 /* Home Banner */
 
+.bgimg{
+  background: #438AC0 url(bgimg.png) no-repeat 30% center;
+  height: 446px;
+  width: 100%;
+  display: block;
+}
+
+.logo{
+  position: relative;
+  left: -400px;
+  width: 250px;
+  padding-bottom: 10px;
+}
+
+.front-text{
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: left;
+  position: relative;
+  top: 50px;
+  width: 350px;
+  left: -370px;
+}
+
+.front-sub-text{
+  color: #313131;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.front-text hr {
+  width: 300px;
+}
+
+span.emptext{
+  color: orange;
+  font-style: italic;
+  font-size: 34px;
+}
+
+.front-list-1{
+  font-size: 22px;
+  color: orange;
+}
+
 .form-box{
-  margin-top: 80px;
+  margin-top: -300px;
+  margin-left: 430px;
   display: block;
   width: 466px;
   height: 332px;
@@ -60,4 +108,39 @@ input#firstname, input#lastname, input#user_email, input#user_phone{
 
 .submit:hover{
   background: #FFBC40;
+}
+
+.other-content{
+  padding-top: 50px;
+}
+
+.other-content img{
+  padding-right: 10px;
+}
+
+.steps{
+font-size: 21px;
+font-weight: bold;
+color: orangered;
+}
+
+.step-subtext{
+  padding-top: 15px;
+  padding-left: 30px;
+  color: #313131;
+  font-size: 15px;
+}
+
+.details{
+  text-align: left;
+  padding-top: 20px;
+  color: #313131;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.details-title{
+  padding: 20px 0px;
+  font-weight: bold;
+  font-size: 17px;
 }

@@ -463,3 +463,71 @@
 [10/25/13 21:54:59 -0400 hnt20138.wireless-pennnet.upenn.edu (2363)] INFO : Installing Rails3 Error instrumentation
 [10/25/13 21:54:59 -0400 hnt20138.wireless-pennnet.upenn.edu (2363)] INFO : Finished instrumentation
 [10/25/13 21:55:00 -0400 hnt20138.wireless-pennnet.upenn.edu (2363)] INFO : Doing deferred dependency-detection before Rack startup
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Starting the New Relic agent in "development" environment.
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Reading configuration from config/newrelic.yml
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Enabling the Request Sampler.
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Environment: development
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Dispatcher: webrick
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Application: My Application
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] WARN : Agent configured not to send data in this environment.
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing ActiveRecord instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing Net instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing deferred Rack instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing Rails 3 Controller instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Installing Rails3 Error instrumentation
+[10/26/13 10:18:27 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Finished instrumentation
+[10/26/13 10:18:28 -0400 hnt20138.wireless-pennnet.upenn.edu (3932)] INFO : Doing deferred dependency-detection before Rack startup
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Starting the New Relic agent in "development" environment.
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Reading configuration from config/newrelic.yml
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Enabling the Request Sampler.
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Environment: development
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Dispatcher: webrick
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Application: My Application
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] WARN : Agent configured not to send data in this environment.
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing ActiveRecord instrumentation
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing Net instrumentation
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing deferred Rack instrumentation
+[10/28/13 23:35:42 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing Rails 3 Controller instrumentation
+[10/28/13 23:35:43 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/28/13 23:35:43 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Installing Rails3 Error instrumentation
+[10/28/13 23:35:43 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Finished instrumentation
+[10/28/13 23:35:44 -0400 modvvlan502.0391.wlan.wharton.upenn.edu (19074)] INFO : Doing deferred dependency-detection before Rack startup
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Starting the New Relic agent in "development" environment.
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Reading configuration from config/newrelic.yml
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Enabling the Request Sampler.
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Environment: development
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Dispatcher: webrick
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Application: My Application
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] WARN : Agent configured not to send data in this environment.
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing ActiveRecord instrumentation
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing Net instrumentation
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing deferred Rack instrumentation
+[10/29/13 10:49:49 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing Rails 3 Controller instrumentation
+[10/29/13 10:49:50 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/29/13 10:49:50 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Installing Rails3 Error instrumentation
+[10/29/13 10:49:50 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Finished instrumentation
+[10/29/13 10:49:50 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (20732)] INFO : Doing deferred dependency-detection before Rack startup
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Starting the New Relic agent in "development" environment.
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Reading configuration from config/newrelic.yml
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Enabling the Request Sampler.
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Environment: development
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Dispatcher: webrick
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Application: My Application
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] WARN : Agent configured not to send data in this environment.
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing ActiveRecord instrumentation
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing DelayedJob instrumentation [part 1/2]
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing Net instrumentation
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing deferred Rack instrumentation
+[10/29/13 11:39:15 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing Rails 3 Controller instrumentation
+[10/29/13 11:39:16 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[10/29/13 11:39:16 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Installing Rails3 Error instrumentation
+[10/29/13 11:39:16 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Finished instrumentation
+[10/29/13 11:39:17 -0400 modvvlan502.0838.wlan.wireless-pennnet.upenn.edu (21268)] INFO : Doing deferred dependency-detection before Rack startup

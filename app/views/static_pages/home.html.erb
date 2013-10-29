@@ -1,29 +1,87 @@
 <div class="container" align="center">
+	<img src="/assets/logo.png" class="logo">
 </div>
-<div class="container" align="center">
-	<div class="form-box">
-		<div class="form-box-heading-1">
-			24 HOUR APPROVAL - ALT RATES - FUNDING IN DAYS!
+<div class="bgimg">
+	<div class="container" align="center">
+		<div class="front-text">
+			<span class="emptext">Instant</span> Business Cash
+			<hr>
+			<div class="front-sub-text">
+				Fast Approval on<br>
+				Business Loans up to<br>
+				$50,000 in Days!
+			</div>
+			<div class="front-list-1">
+				Low Monthly Payments
+				<br>
+				Apply in Minutes
+				<br>
+				Okay if Denied by Bank
+				<br>
+				As Fast as 24 hours!
+			</div>
 		</div>
-		<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
-		<div class="firstname">
-			<%= label_tag :firstname, "First Name" %>
-			<%= text_field_tag :firstname %>
+		<div class="form-box">
+			<div class="form-box-heading-1">
+				24 HOUR APPROVAL - ALT RATES - FUNDING IN DAYS!
+			</div>
+			<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
+			<div class="firstname">
+				<%= label_tag :firstname, "First Name" %>
+				<%= text_field_tag :firstname %>
+			</div>
+			<div class="lastname">
+				<%= label_tag :lastname, "Last Name" %>
+				<%= text_field_tag :lastname %>
+			</div>
+			<div class="email">
+				<%= f.label :email %>
+				<%= f.text_field :email %>
+			</div>
+			<div class="phone">
+				<%= f.label :phone %>
+				<%= f.text_field :phone %>
+			</div>
+			<%= f.submit "Get Started", :class => "submit" %>
+			<% end %>
 		</div>
-		<div class="lastname">
-			<%= label_tag :lastname, "Last Name" %>
-			<%= text_field_tag :lastname %>
+	</div>
+</div>
+<div class="container other-content" align="center">
+	<div class="row">
+		<div class="span4 steps">
+			<img src='/assets/step1.png'>1. Quick Survey
+			<div class="step-subtext">
+				Find Out If You Qualify, 100% FREE!
+			</div>
 		</div>
-		<div class="email">
-			<%= f.label :email %>
-			<%= f.text_field :email %>
+		<div class="span4 steps">
+			<img src='/assets/step2.png'>2. Get an Instant Answer
+			<div class="step-subtext">
+				Receive an offer within minutes
+			</div>
+			
 		</div>
-		<div class="phone">
-			<%= f.label :phone %>
-			<%= f.text_field :phone %>
+		<div class="span4 steps">
+			<img src='/assets/step3.png'>3. Get Your Money
+			<div class="step-subtext">
+				Wired to you within days
+			</div>
 		</div>
-		<%= f.submit "Get Started", :class => "submit" %>
-		<% end %>
+	</div>
+	<hr>
+	<hr>
+	<div class="details">
+		<div class="details-title">
+			Why Choose Instant Business Cash?
+		</div>
+		If you don’t qualify for traditional business loans, or if the bank has denied your loan, Instant Business Loans can help. We provide cash for businesses with urgent cash needs. All you need to qualify is a business bank account and to have been in business for at least 2 months. We accept businesses with less than perfect credit scores.
+	</div>
+	<div class="details">
+		<div class="details-title">
+			No Prepayment Penalties
+		</div>
+		You can repay monthly, or prepay with no prepay penalty! You only pay interest for the days that you have borrowed, and you can use funding for nearly any business purpose.
 	</div>
 </div>
 

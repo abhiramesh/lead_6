@@ -1,10 +1,20 @@
 ---
+bgimg.png: bgimg-6b36bfb0ccb570359015d568868fd365.png
+bgimg/index.png: bgimg-6b36bfb0ccb570359015d568868fd365.png
 formbox.png: formbox-d0ae6a92cd82e8eb7f6351bf2ecec9de.png
 formbox/index.png: formbox-d0ae6a92cd82e8eb7f6351bf2ecec9de.png
+logo.png: logo-9c3ed65393df0302327a6773d0f457ba.png
+logo/index.png: logo-9c3ed65393df0302327a6773d0f457ba.png
+step1.png: step1-645e4e944ebc9b5b8c64e7845a2a16da.png
+step1/index.png: step1-645e4e944ebc9b5b8c64e7845a2a16da.png
+step2.png: step2-4db0a2a646bc8baab68e97a7e5ccd64a.png
+step2/index.png: step2-4db0a2a646bc8baab68e97a7e5ccd64a.png
+step3.png: step3-7215c6d37621308cfe1f75a7a64d0461.png
+step3/index.png: step3-7215c6d37621308cfe1f75a7a64d0461.png
 application.js: application-de18d7e6b44271513c9d6f27ea57b7ac.js
 application/index.js: application-de18d7e6b44271513c9d6f27ea57b7ac.js
-application.css: application-12f1f6cecbbcc6df36169c3af06ce20f.css
-application/index.css: application-12f1f6cecbbcc6df36169c3af06ce20f.css
+application.css: application-4d0072eded4362d72ef6d019773a1306.css
+application/index.css: application-4d0072eded4362d72ef6d019773a1306.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
