@@ -129,7 +129,7 @@ class UsersController < ApplicationController
           url = "https://leads.leadtracksystem.com/genericPostlead.php"
               params = {
                 "TYPE" => '105',
-                "SRC" => "PujVA",
+                "SRC" => "RevenSBL",
                 "Trusted_Form" => @user.trusted,
                 "Landing_Page" => "amp1",
                 "IP_Address" => "75.2.92.149",
@@ -138,8 +138,7 @@ class UsersController < ApplicationController
                 "Business_Name" => @user.business_name,
                 "State" => @user.state,
                 "Email" => @user.email,
-                "Day_Phone" => @user.phone,
-                "Evening_Phone" => @user.phone,
+                "Phone" => @user.phone,
                 "Pub_ID" => lead_src,
                 "Have_2_Months_Bank_Statements" => @user.bank
               }
