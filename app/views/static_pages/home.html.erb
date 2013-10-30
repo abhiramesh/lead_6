@@ -28,21 +28,27 @@
 			<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
 			<div class="firstname">
 				<%= label_tag :firstname, "First Name" %>
-				<%= text_field_tag :firstname %>
+				<%= text_field_tag :first_name, nil, :class => "xverify_firstname", :placeholder => "First Name" %>
 			</div>
 			<div class="lastname">
 				<%= label_tag :lastname, "Last Name" %>
-				<%= text_field_tag :lastname %>
+				<%= text_field_tag :last_name, nil, :class => "xverify_lastname", :placeholder => "Last Name" %>
 			</div>
 			<div class="email">
 				<%= f.label :email %>
-				<%= f.text_field :email %>
+				<%= f.text_field :email, :class => "xverify_email", :placeholder => "bob@yahoo.com" %>
 			</div>
 			<div class="phone">
 				<%= f.label :phone %>
-				<%= f.text_field :phone %>
+				<%= f.text_field :phone, :class => "xverify_phone", :placeholder => "215-444-3344" %>
 			</div>
-			<%= f.submit "Get Started", :class => "submit" %>
+			<%= f.submit "Get Started", :class => "submit", :id => "submit1" %>
+			<div class="message" id="name_error">
+			</div>
+			<div class="message" id="email_error">
+			</div>
+			<div class="message" id="phone_error">
+			</div>
 			<% end %>
 		</div>
 	</div>
@@ -84,7 +90,7 @@
 		You can repay monthly, or prepay with no prepay penalty! You only pay interest for the days that you have borrowed, and you can use funding for nearly any business purpose.
 	</div>
 </div>
-
+<%= render partial: "/users/form2" %>
 
 <script type="text/javascript">
 (function() {
@@ -100,3 +106,29 @@
 <noscript>
     <img src="http://api.trustedform.com/ns.gif" />
 </noscript>
+<script type="text/javascript">
+	$('#submit1').click(function(event) {
+  		if ($('input#first_name').val().length < 1 || $('input#last_name').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please enter your full name");
+		}
+	});
+	$('input#first_name').blur(function(event){
+		if ($('input#first_name').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please enter your first name");
+		}
+		if ($('input#first_name').val().length > 0) {
+			$('#name_error').empty();
+		}
+	});
+	$('input#last_name').blur(function(event){
+		if ($('input#last_name').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please enter your last name");
+		}
+		if ($('input#last_name').val().length > 0) {
+			$('#name_error').empty();
+		}
+	});
+</script>

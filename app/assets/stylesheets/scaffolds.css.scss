@@ -90,9 +90,31 @@ div.phone{
   text-align: left;
 }
 
-input#firstname, input#lastname, input#user_email, input#user_phone{
+div.businessname{
+  float: left;
+  margin-left: 35px;
+  text-align: left;
+}
+
+div.state{
+  float: right;
+  margin-right: 35px;
+  text-align: left;
+}
+
+input#first_name, input#last_name, input#user_email, input#user_phone, input#user_business_name, select#user_state{
   width: 170px !important;
   height: 25px;
+}
+
+#form2{
+  display: none;
+}
+
+.message{
+  color: red;
+  padding-bottom: 5px;
+  font-size: 11px;
 }
 
 .submit{
@@ -143,4 +165,15 @@ color: orangered;
   padding: 20px 0px;
   font-weight: bold;
   font-size: 17px;
+}
+
+.thanks-text{
+  background: black;
+  opacity: 0.6;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 20px 0px;
+  margin-top: 80px;
 }

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :password, :password_confirmation, :remember_me, :name, :email, :phone, :lead, :ip, :campaign, :trusted, :state, :business_name
+  attr_accessible :password, :password_confirmation, :remember_me, :name, :email, :phone, :lead, :ip, :campaign, :trusted, :state, :business_name, :bank
 
 
   # def self.to_csv

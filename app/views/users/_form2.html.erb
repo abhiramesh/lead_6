@@ -1,89 +1,51 @@
-<div id="form2">
-	<%= label_tag :zipcode, 'Your zipcode is:' %>
-	<%= text_field_tag :zipcode, nil, placeholder: "Zipcode", :style => "width:120px;" %>
-	<div class="message" id="zip_error"></div>
-	<div class='submit', id="submit2">
-		Next
-	</div>
-	<div class="back-link" id="back-link-1">Back</div>
-</div>
+	<%= form_for @user, :html => {:id => "form2"} do |f| %>
+			<div class="businessname">
+				<%= f.label :business_name, "Business Name" %>
+				<%= f.text_field :business_name, :placeholder => "Business Name" %>
+			</div>
+			<div class="state">
+				<%= f.label :state, "State" %>
+				<%= f.select :state, options_for_state, :include_blank => true %>
+			</div>
+			<br><br><br><br>
+			<div class="bank">
+				<%= f.label :bank, "Do you have 2 months of bank statements?" %>
+				<%= f.select :bank, options_for_bank, :include_blank => true %>
+			</div>
+			<div class="message" id="error2">
+			</div>
+			<%= f.submit "Recieve Quote!", :class => "submit", :id => "submit2" %>
+			<% end %>
 <script type="text/javascript">
 	$('#submit2').click(function(event) {
-  		event.preventDefault();
-  		if (/(^\d{5}$)|(^\d{5}-\d{4}$)/.test($('input#zipcode').val()) == false) {
+  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "" || $('#user_bank').val() == "") {
 			event.preventDefault();
-			$('#zip_error').empty().append("Please enter a valid zipcode");
+			$('#error2').empty().append("Please fill out all fields");
 		}
-		else{
-			$.ajax({
-				type: "POST",
-				url: $('#form2').attr('action'),
-				data: { zipcode: $("#zipcode").val() },
-				dataType: "script",
-				async: false
-			});
-			$('#form2').hide();
-			$('#form2b').show().insertAfter('div.progress');
-			$('.bar').attr('style', 'width:40%;');
-		}
-  // 		$.ajax({
-		// 	type: "POST",
-		// 	url: '/checkzip',
-		// 	data: { zipcode: $('input#zipcode').val() },
-		// 		  dataType: "script",
-		// 		  async: false,
-		// 		  success: function(response) {
-		// 		  	var response = JSON.parse(response)
-		// 			if (response == "no") {
-		// 				event.preventDefault();
-		// 				$('#zip_error').empty().append("Please enter a valid zipcode");
-		// 			}
-		// 			else {
-		// 				$.ajax({
-		// 				  type: "POST",
-		// 				  url: $('#form2').attr('action'),
-		// 				  data: { zipcode: $("#zipcode").val() },
-		// 				  dataType: "script",
-		// 				  async: false
-		// 				});
-		// 				$('#form2').hide();
-		// 				$('#form2b').show().insertAfter('div.progress');
-		// 				$('.bar').attr('style', 'width:40%;');
-		// 			}
-		// 		  }
-		// });
-
-
 	});
-	$('#back-link-1').click(function(){
-		$('#form2').hide();
-		$('#form1').show().insertAfter('div.progress');
-		$('#newsubmit1').empty().append($('<input class="submit" id="submit6" name="commit" type="submit" value="Next">'));
-	});
-	$('input#zipcode').blur(function(event){
-		// $.ajax({
-		// 	type: "POST",
-		// 	url: '/checkzip',
-		// 	data: { zipcode: $('input#zipcode').val() },
-		// 		  dataType: "script",
-		// 		  async: false,
-		// 		  success: function(response) {
-		// 		  	var response = JSON.parse(response)
-		// 			if (response == "no") {
-		// 				event.preventDefault();
-		// 				$('#zip_error').empty().append("Please enter a valid zipcode");
-		// 			}
-		// 			if (response == "yes") {
-		// 				$('#zip_error').empty();
-		// 			}
-		// 		  }
-		// });
-		if (/(^\d{5}$)|(^\d{5}-\d{4}$)/.test($('input#zipcode').val()) == false) {
+	$('input#user_business_name').blur(function(event){
+		if ($('input#user_business_name').val().length < 1) {
 			event.preventDefault();
-			$('#zip_error').empty().append("Please enter a valid zipcode");
+			$('#error2').empty().append("Please enter your business name");
 		}
-		else{
-			$('#zip_error').empty();
+		if ($('input#user_business_name').val().length > 0) {
+			$('#error2').empty();
+		}
+	});
+	$('select#user_state').bind('click change',function() {
+		if ($('#user_state').val() != "") {
+			$('#error2').empty();
+		}
+		if ($('#user_state').val() == "") {
+			$('#error2').empty().append("Please select an option");
+		}
+	});
+	$('select#user_bank').bind('click change',function() {
+		if ($('#user_bank').val() != "") {
+			$('#error2').empty();
+		}
+		if ($('#user_bank').val() == "") {
+			$('#error2').empty().append("Please select an option");
 		}
 	});
 </script>
