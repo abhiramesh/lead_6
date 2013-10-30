@@ -1,4 +1,4 @@
-	<%= form_for @user, :html => {:id => "form2"} do |f| %>
+	<%= form_for @user, remote: true, :html => {:id => "form2"} do |f| %>
 			<div class="businessname">
 				<%= f.label :business_name, "Business Name" %>
 				<%= f.text_field :business_name, :placeholder => "Business Name" %>
@@ -8,23 +8,19 @@
 				<%= f.select :state, options_for_state, :include_blank => true %>
 			</div>
 			<br><br><br><br>
-			<div class="bank">
-				<%= f.label :bank, "Do you have 2 months of bank statements?" %>
-				<%= f.select :bank, options_for_bank, :include_blank => true %>
-			</div>
-			<div class="age">
-				<%= f.label :age, "Are you at least 21 years of age?" %>
-				<%= f.select :age, options_for_age, :include_blank => true %>
-			</div>
 			<div class="message" id="error2">
 			</div>
-			<%= f.submit "Recieve Quote!", :class => "submit", :id => "submit2" %>
+			<%= f.submit "Continue!", :class => "submit", :id => "submit2" %>
 			<% end %>
 <script type="text/javascript">
 	$('#submit2').click(function(event) {
-  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "" || $('#user_bank').val() == "" || $('#user_age').val() == "") {
+  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "") {
 			event.preventDefault();
 			$('#error2').empty().append("Please fill out all fields");
+		}
+		else{
+			$('#form2').hide();
+			$('#form3').show().insertAfter('div.form-box-heading-1');
 		}
 	});
 	$('input#user_business_name').blur(function(event){
@@ -41,22 +37,6 @@
 			$('#error2').empty();
 		}
 		if ($('#user_state').val() == "") {
-			$('#error2').empty().append("Please select an option");
-		}
-	});
-	$('select#user_bank').bind('click change',function() {
-		if ($('#user_bank').val() != "") {
-			$('#error2').empty();
-		}
-		if ($('#user_bank').val() == "") {
-			$('#error2').empty().append("Please select an option");
-		}
-	});
-	$('select#user_age').bind('click change',function() {
-		if ($('#user_age').val() != "") {
-			$('#error2').empty();
-		}
-		if ($('#user_age').val() == "") {
 			$('#error2').empty().append("Please select an option");
 		}
 	});

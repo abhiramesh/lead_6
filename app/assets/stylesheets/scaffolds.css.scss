@@ -11,13 +11,22 @@
 
 .logo{
   position: relative;
-  left: -400px;
+  left: -250px;
   width: 250px;
   padding-bottom: 10px;
 }
 
+span.phone{
+  font-size: 18px;
+  font-weight: bold;
+  color: #313131;
+  position: relative;
+  left: 200px;
+}
+
 .front-text{
   color: white;
+  text-shadow: 1px 1px 3px black;
   font-weight: bold;
   font-size: 32px;
   line-height: 36px;
@@ -30,6 +39,7 @@
 
 .front-sub-text{
   color: #313131;
+  text-shadow: 1px 1px 3px #CCC;
   font-size: 30px;
   padding-bottom: 30px;
 }
@@ -131,6 +141,17 @@ select#user_state, select#user_bank, select#user_age{
   display: none;
 }
 
+#form3{
+  display: none;
+}
+
+#consent{
+  font-size: 10px;
+  line-height: 15px;
+  padding: 0px 15px;
+  text-align: left;
+}
+
 .message{
   color: red;
   padding-bottom: 5px;
@@ -196,4 +217,13 @@ color: orangered;
   line-height: 40px;
   padding: 20px 10px;
   margin-top: 80px;
+}
+
+.footer{
+  background: #313131;
+  padding: 50px 20px;
+}
+
+.footer a {
+  color: white !important;
 }
