@@ -12,13 +12,17 @@
 				<%= f.label :bank, "Do you have 2 months of bank statements?" %>
 				<%= f.select :bank, options_for_bank, :include_blank => true %>
 			</div>
+			<div class="age">
+				<%= f.label :age, "Are you at least 21 years of age?" %>
+				<%= f.select :age, options_for_age, :include_blank => true %>
+			</div>
 			<div class="message" id="error2">
 			</div>
 			<%= f.submit "Recieve Quote!", :class => "submit", :id => "submit2" %>
 			<% end %>
 <script type="text/javascript">
 	$('#submit2').click(function(event) {
-  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "" || $('#user_bank').val() == "") {
+  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "" || $('#user_bank').val() == "" || $('#user_age').val() == "") {
 			event.preventDefault();
 			$('#error2').empty().append("Please fill out all fields");
 		}
@@ -45,6 +49,14 @@
 			$('#error2').empty();
 		}
 		if ($('#user_bank').val() == "") {
+			$('#error2').empty().append("Please select an option");
+		}
+	});
+	$('select#user_age').bind('click change',function() {
+		if ($('#user_age').val() != "") {
+			$('#error2').empty();
+		}
+		if ($('#user_age').val() == "") {
 			$('#error2').empty().append("Please select an option");
 		}
 	});

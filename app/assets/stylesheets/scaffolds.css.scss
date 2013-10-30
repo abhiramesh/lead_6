@@ -102,9 +102,29 @@ div.state{
   text-align: left;
 }
 
-input#first_name, input#last_name, input#user_email, input#user_phone, input#user_business_name, select#user_state{
+div.bank{
+  float: left;
+  margin-left: 35px;
+  text-align: left;
+}
+
+div.age{
+  float: right;
+  margin-right: 35px;
+  text-align: left;
+}
+
+input#first_name, input#last_name, input#user_email, input#user_phone, input#user_business_name{
   width: 170px !important;
   height: 25px;
+}
+
+select#user_state, select#user_bank, select#user_age{
+  width: 150px !important;
+}
+
+.businessname label, .state label, .bank label, .age label{
+  font-size: 11px;
 }
 
 #form2{
@@ -172,8 +192,8 @@ color: orangered;
   opacity: 0.6;
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 40px;
-  padding: 20px 0px;
+  padding: 20px 10px;
   margin-top: 80px;
 }

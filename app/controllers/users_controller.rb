@@ -116,6 +116,10 @@ class UsersController < ApplicationController
       @user.state = params["user"]["state"]
       @user.save!
     end
+    if params["user"] && params["user"]["age"]
+      @user.age = params["user"]["age"]
+      @user.save!
+    end
       if @user.update_attributes(params[:user])
         if @user.name && @user.email && @user.phone && @user.state && @user.business_name && @user.bank
           if @user.campaign.to_s.downcase.include? "vinny"
@@ -140,7 +144,8 @@ class UsersController < ApplicationController
                 "Email" => @user.email,
                 "Phone" => @user.phone,
                 "Pub_ID" => lead_src,
-                "Have_2_Months_Bank_Statements" => @user.bank
+                "Have_2_Months_Bank_Statements" => @user.bank,
+                "Over_21_Years_Old" => @user.age
               }
           response = a.post(url, params)
           puts d = Nokogiri::XML(response.content)

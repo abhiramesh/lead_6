@@ -75,4 +75,11 @@ module ApplicationHelper
 		]
 	end
 
+	def options_for_age
+		[
+			["Yes", "Yes"],
+			["No", "No"]
+		]
+	end
+
 end
