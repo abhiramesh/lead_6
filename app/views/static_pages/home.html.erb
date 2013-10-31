@@ -117,27 +117,69 @@
 </noscript>
 <script type="text/javascript">
 	$('#submit1').click(function(event) {
-  		if ($('input#first_name').val().length < 1 || $('input#last_name').val().length < 1) {
+  		if ($('input#first_name').val().length < 1) {
 			event.preventDefault();
-			$('#name_error').empty().append("Please enter your full name");
+			$('input#first_name').css('border-color','red');
+			$('#name_error').empty().append("Please fill out all fields");
+		}
+		if ($('input#last_name').val().length < 1) {
+			event.preventDefault();
+			$('input#last_name').css('border-color','red');
+			$('#name_error').empty().append("Please fill out all fields");
+		}
+		if ($('input#user_email').val().length < 1) {
+			event.preventDefault();
+			$('input#user_email').css('border-color','red');
+			$('#name_error').empty().append("Please fill out all fields");
+		}
+		if ($('input#user_phone').val().length < 1) {
+			event.preventDefault();
+			$('input#user_phone').css('border-color','red');
+			$('#name_error').empty().append("Please fill out all fields");
 		}
 	});
 	$('input#first_name').blur(function(event){
 		if ($('input#first_name').val().length < 1) {
 			event.preventDefault();
-			$('#name_error').empty().append("Please enter your first name");
+			$('#name_error').empty().append("Please fill out all fields");
+			$('input#first_name').css('border-color','red');
 		}
 		if ($('input#first_name').val().length > 0) {
 			$('#name_error').empty();
+			$('input#first_name').css('border-color','#cccccc');
 		}
 	});
 	$('input#last_name').blur(function(event){
 		if ($('input#last_name').val().length < 1) {
 			event.preventDefault();
-			$('#name_error').empty().append("Please enter your last name");
+			$('#name_error').empty().append("Please fill out all fields");
+			$('input#last_name').css('border-color','red');
 		}
 		if ($('input#last_name').val().length > 0) {
 			$('#name_error').empty();
+			$('input#last_name').css('border-color','#cccccc');
+		}
+	});
+	$('input#user_phone').blur(function(event){
+		if ($('input#user_phone').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please fill out all fields");
+			$('input#user_phone').css('border-color','red');
+		}
+		if ($('input#user_phone').val().length > 0) {
+			$('#name_error').empty();
+			$('input#user_phone').css('border-color','#cccccc');
+		}
+	});
+	$('input#user_email').blur(function(event){
+		if ($('input#user_email').val().length < 1) {
+			event.preventDefault();
+			$('#name_error').empty().append("Please fill out all fields");
+			$('input#user_email').css('border-color','red');
+		}
+		if ($('input#user_email').val().length > 0) {
+			$('#name_error').empty();
+			$('input#user_email').css('border-color','#cccccc');
 		}
 	});
 </script>
