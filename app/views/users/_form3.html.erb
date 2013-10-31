@@ -2,10 +2,14 @@
 			<div class="bank">
 				<%= f.label :bank, "Do you have 2 months of bank statements?" %>
 				<%= f.select :bank, options_for_bank, :include_blank => true %>
+				<div class="message" id="bank_error">
+				</div>
 			</div>
 			<div class="age">
 				<%= f.label :age, "Are you at least 21 years of age?" %>
 				<%= f.select :age, options_for_age, :include_blank => true %>
+				<div class="message" id="age_error">
+				</div>
 			</div>
 			<br><br><br><br>
 			<div id="consent">
@@ -15,39 +19,52 @@
 				dialing method may be used. Standard carrier and messages rates will apply. Your information 
 				is safe & secure and will only be used for the purpose of this inquiry.
 			</div>
-			<div class="message" id="error3">
+			<div class="message" id="consent_error">
 			</div>
 			<%= f.submit "Recieve Quote!", :class => "submit", :id => "submit3" %>
 			<% end %>
 			<script type="text/javascript">
 	$('#submit3').click(function(event) {
-  		if ($('#user_bank').val() == "" || $('#user_age').val() == "" || $("#user_consent").is(':checked') == false) {
+  		if ($('#user_bank').val() == "") {
 			event.preventDefault();
-			$('#error3').empty().append("Please fill out all fields");
+			$('#bank_error').empty().append("Please select an option");
 		}
+		if ($("#user_consent").is(':checked') == false) {
+			event.preventDefault();
+			$('#consent_error').empty().append("Please consent to continue");
+			$('input#user_consent').css('box-shadow','0px 0px 10px red');
+		}
+		if ($('#user_age').val() == "") {
+			event.preventDefault();
+			$('#age_error').empty().append("Please select an option");
+		}
+		
+		
 	});
 	$('select#user_bank').bind('click change',function() {
 		if ($('#user_bank').val() != "") {
-			$('#error3').empty();
+			$('#bank_error').empty();
 		}
 		if ($('#user_bank').val() == "") {
-			$('#error3').empty().append("Please select an option");
+			$('#bank_error').empty().append("Please select an option");
 		}
 	});
 	$('select#user_age').bind('click change',function() {
 		if ($('#user_age').val() != "") {
-			$('#error3').empty();
+			$('#age_error').empty();
 		}
 		if ($('#user_age').val() == "") {
-			$('#error3').empty().append("Please select an option");
+			$('#age_error').empty().append("Please select an option");
 		}
 	});
 	$("#user_consent").change(function(){
 		if ($("#user_consent").is(':checked') == false) {		
-			$('#error3').empty().append("Please click the checkbox to consent");
+			$('#consent_error').empty().append("Please consent to continue");
+			$('input#user_consent').css('box-shadow','0px 0px 10px red');
 		}
 		else {
-			$('#error3').empty();
+			$('#consent_error').empty();
+			$('input#user_consent').css('box-shadow','none');
 		}
 	});
 </script>

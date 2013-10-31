@@ -2,21 +2,27 @@
 			<div class="businessname">
 				<%= f.label :business_name, "Business Name" %>
 				<%= f.text_field :business_name, :placeholder => "Business Name" %>
+				<div class="message" id="business_error">
+				</div>
 			</div>
 			<div class="state">
 				<%= f.label :state, "State" %>
 				<%= f.select :state, options_for_state, :include_blank => true %>
+				<div class="message" id="state_error">
+				</div>
 			</div>
-			<br><br><br><br>
-			<div class="message" id="error2">
-			</div>
+			<br><br><br><br><br>
 			<%= f.submit "Continue!", :class => "submit", :id => "submit2" %>
 			<% end %>
 <script type="text/javascript">
 	$('#submit2').click(function(event) {
-  		if ($('input#user_business_name').val().length < 1 || $('#user_state').val() == "") {
+  		if ($('input#user_business_name').val().length < 1 ) {
 			event.preventDefault();
-			$('#error2').empty().append("Please fill out all fields");
+			$('#business_error').empty().append("Please add business name");
+		}
+		if ($('#user_state').val() == ""){
+			event.preventDefault();
+			$('#state_error').empty().append("Please select a state");
 		}
 		else{
 			$('#form2').hide();
@@ -26,18 +32,18 @@
 	$('input#user_business_name').blur(function(event){
 		if ($('input#user_business_name').val().length < 1) {
 			event.preventDefault();
-			$('#error2').empty().append("Please enter your business name");
+			$('#business_error').empty().append("Please add business name");
 		}
 		if ($('input#user_business_name').val().length > 0) {
-			$('#error2').empty();
+			$('#business_error').empty();
 		}
 	});
 	$('select#user_state').bind('click change',function() {
 		if ($('#user_state').val() != "") {
-			$('#error2').empty();
+			$('#state_error').empty();
 		}
 		if ($('#user_state').val() == "") {
-			$('#error2').empty().append("Please select an option");
+			$('#state_error').empty().append("Please select a state");
 		}
 	});
 </script>
