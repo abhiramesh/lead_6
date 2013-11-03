@@ -24,9 +24,10 @@
 			event.preventDefault();
 			$('#state_error').empty().append("Please select a state");
 		}
-		else{
+		if ($('#user_state').val() != "" && $('input#user_business_name').val().length > 1 ){
 			$('#form2').hide();
 			$('#form3').show().insertAfter('div.form-box-heading-1');
+			$('div.form-box-heading-1').hide();
 		}
 	});
 	$('input#user_business_name').blur(function(event){

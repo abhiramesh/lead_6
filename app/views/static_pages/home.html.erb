@@ -1,77 +1,97 @@
-<div class="container" align="center">
+<div class="container-fluid" align="left">
 	<img src="/assets/logo.png" class="logo">
 	<span class="phone">
-		888-400-9132 - Call Now for Approval
+		<a href="callto:8884009132">888-400-9132 - Call Now for Approval</a>
+	</span>
+</div>
+<div class="container-fluid" align="center">
+	<span class="phone2">
+		<a href="callto:8884009132">888-400-9132
+			<div class="phone2text">Call Now for Approval</div>
+		</a>
 	</span>
 </div>
 <div class="bgimg">
-	<div class="container" align="center" style="height:700px;">
-		<div class="front-text">
-			<span class="emptext">Instant</span> Business Cash
-			<hr>
-			<div class="front-sub-text">
-				Fast Approval on<br>
-				Business Loans up to<br>
-				$50,000 in Days!
+	<div class="container-fluid" align="center" style="height:700px;">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="front-text">
+					<span class="emptext">Instant</span> Business Cash
+					<hr>
+					<div class="front-sub-text">
+						Fast Approval on<br>
+						Business Loans up to<br>
+						$50,000 in Days!
+					</div>
+					<div class="front-list-1">
+						Low Monthly Payments
+						<br>
+						Apply in Minutes
+						<br>
+						Okay if Denied by Bank
+						<br>
+						As Fast as 24 hours!
+					</div>
+				</div>
 			</div>
-			<div class="front-list-1">
-				Low Monthly Payments
-				<br>
-				Apply in Minutes
-				<br>
-				Okay if Denied by Bank
-				<br>
-				As Fast as 24 hours!
+			<div class="col-md-6">
+				<div class="form-box">
+					<div class="form-box-header">
+						Apply Now
+					</div>
+					<div class="form-box-heading-1">
+						24 HOUR APPROVAL - ALT RATES - FUNDING IN DAYS!
+					</div>
+					<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
+					<div class="firstname">
+						<%= label_tag :firstname, "First Name" %>
+						<%= text_field_tag :first_name, nil, :class => "xverify_firstname", :placeholder => "First Name" %>
+					</div>
+					<div class="lastname">
+						<%= label_tag :lastname, "Last Name" %>
+						<%= text_field_tag :last_name, nil, :class => "xverify_lastname", :placeholder => "Last Name" %>
+					</div>
+					<div class="email">
+						<%= f.label :email %>
+						<%= f.text_field :email, :class => "xverify_email", :placeholder => "bob@yahoo.com" %>
+						
+					</div>
+					<div class="phone">
+						<%= f.label :phone %>
+						<%= f.text_field :phone, :class => "xverify_phone", :placeholder => "215-444-3344" %>
+					</div>
+					<div id="errors1">
+						<div class="message" id="name_error">
+						</div>
+						<div class="message" id="email_error">
+						</div>
+						<div class="message" id="phone_error">
+						</div>
+					</div>
+					<%= f.submit "Get Started", :class => "submit", :id => "submit1" %>
+				
+					<% end %>
+				</div>
 			</div>
-		</div>
-		<div class="form-box">
-			<div class="form-box-heading-1">
-				24 HOUR APPROVAL - ALT RATES - FUNDING IN DAYS!
-			</div>
-			<%= form_for User.new, remote: true, :html => {:id => "form1"} do |f| %>
-			<div class="firstname">
-				<%= label_tag :firstname, "First Name" %>
-				<%= text_field_tag :first_name, nil, :class => "xverify_firstname", :placeholder => "First Name" %>
-			</div>
-			<div class="lastname">
-				<%= label_tag :lastname, "Last Name" %>
-				<%= text_field_tag :last_name, nil, :class => "xverify_lastname", :placeholder => "Last Name" %>
-			</div>
-			<div class="email">
-				<%= f.label :email %>
-				<%= f.text_field :email, :class => "xverify_email", :placeholder => "bob@yahoo.com" %>
-			</div>
-			<div class="phone">
-				<%= f.label :phone %>
-				<%= f.text_field :phone, :class => "xverify_phone", :placeholder => "215-444-3344" %>
-			</div>
-			<%= f.submit "Get Started", :class => "submit", :id => "submit1" %>
-			<div class="message" id="name_error">
-			</div>
-			<div class="message" id="email_error">
-			</div>
-			<div class="message" id="phone_error">
-			</div>
-			<% end %>
 		</div>
 	</div>
 </div>
-<div class="container other-content" align="center">
+<div class="container-fluid other-content" align="center">
 	<div class="row">
-		<div class="span4 steps">
+		<div class="col-md-4 steps">
 			<img src='/assets/step1.png'>1. Quick Survey
 			<div class="step-subtext">
 				Find Out If You Qualify, 100% FREE!
 			</div>
 		</div>
-		<div class="span4 steps">
+		<div class="col-md-4 steps">
 			<img src='/assets/step2.png'>2. Get an Instant Answer
 			<div class="step-subtext">
 				Receive an offer within minutes
 			</div>
 			
 		</div>
-		<div class="span4 steps">
+		<div class="col-md-4 steps">
 			<img src='/assets/step3.png'>3. Get Your Money
 			<div class="step-subtext">
 				Wired to you within days
@@ -94,7 +114,7 @@
 	</div>
 </div>
 <div class="footer">
-	<div class="container">
+	<div class="container-fluid">
 		<a href="/privacy" target="_blank">Privacy Policy</a>
 	</div>
 </div>
@@ -130,12 +150,12 @@
 		if ($('input#user_email').val().length < 1) {
 			event.preventDefault();
 			$('input#user_email').css('border-color','red');
-			$('#name_error').empty().append("Please fill out all fields");
+			$('#email_error').empty().append("Please fill out all fields");
 		}
 		if ($('input#user_phone').val().length < 1) {
 			event.preventDefault();
 			$('input#user_phone').css('border-color','red');
-			$('#name_error').empty().append("Please fill out all fields");
+			$('#phone_error').empty().append("Please fill out all fields");
 		}
 	});
 	$('input#first_name').blur(function(event){
@@ -163,22 +183,22 @@
 	$('input#user_phone').blur(function(event){
 		if ($('input#user_phone').val().length < 1) {
 			event.preventDefault();
-			$('#name_error').empty().append("Please fill out all fields");
+			$('#phone_error').empty().append("Please fill out all fields");
 			$('input#user_phone').css('border-color','red');
 		}
 		if ($('input#user_phone').val().length > 0) {
-			$('#name_error').empty();
+			$('#phone_error').empty();
 			$('input#user_phone').css('border-color','#cccccc');
 		}
 	});
 	$('input#user_email').blur(function(event){
 		if ($('input#user_email').val().length < 1) {
 			event.preventDefault();
-			$('#name_error').empty().append("Please fill out all fields");
+			$('#email_error').empty().append("Please fill out all fields");
 			$('input#user_email').css('border-color','red');
 		}
 		if ($('input#user_email').val().length > 0) {
-			$('#name_error').empty();
+			$('#email_error').empty();
 			$('input#user_email').css('border-color','#cccccc');
 		}
 	});
