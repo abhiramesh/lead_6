@@ -208,7 +208,7 @@ select#user_state, select#user_bank, select#user_age{
   color: #313131;
   font-weight: bold;
   border: solid 3px #CCC;
-  float: right;
+  float: right !important;
   margin-right: 35px;
 }
 
@@ -279,8 +279,13 @@ padding-top: 15px;
     display: none;
   }
 
+  .form-box{
+    padding-bottom: 50px;
+  }
+
   .logo{
     float: none;
+    width: 70%;
   }
 
   span.phone{
@@ -298,8 +303,18 @@ padding-top: 15px;
     float: none;
   }
 
+  .message{
+    font-size: 9px !important;
+  }
+
+  .submit{
+    width: 90px !important;
+    font-size: 11px;
+    padding: 10px 0px;
+  }
+
   input#first_name, input#last_name, input#user_email, input#user_phone, input#user_business_name{
-  width: 120px !important;
+  width: 100px !important;
   height: 35px;
   }
 
